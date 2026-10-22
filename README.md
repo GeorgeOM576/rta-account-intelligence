@@ -162,3 +162,7 @@ Live provider behavior and research quality require real keys and have not been 
 See [GitHub and Streamlit Community Cloud preparation](docs/deployment.md) before publishing. It records secret-rotation findings, secure configuration, Cloud service-account authentication, and SQLite persistence limits. Deployment preparation does not deploy the app or migrate workspace data.
 
 Google Translation on Community Cloud supports `[gcp_service_account]` secrets; local ADC remains available when that section is absent. See [Google authentication setup](docs/google-cloud-authentication.md).
+
+## How to Use RTA
+
+Open **How to Use RTA** directly below Dashboard in the sidebar for the six-step workflow, result definitions and review tips. It works before uploading data and makes no database or provider calls. [Page implementation and validation](docs/how-to-use-rta-page.md).

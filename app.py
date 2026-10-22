@@ -29,6 +29,20 @@ from rta.translation_runtime import stale_translation_modules
 
 apply_brand()
 
+with st.sidebar:
+    logo(sidebar=True)
+    st.caption('ACCOUNT INTELLIGENCE · MVP V3')
+    with st.container(key='redthread_navigation'):
+        page = st.radio('Workspace', ['Dashboard', 'How to Use RTA', 'Upload Data', 'Configure Reconciliation',
+                'Translation Intelligence', 'Run Reconciliation', 'AI Research', 'Review & Approvals', 'Export Results', 'Settings'])
+
+if page == 'How to Use RTA':
+    # The static guide must not initialize or load a workspace/database.
+    from rta.help_ui import render as render_help
+    header()
+    render_help()
+    st.stop()
+
 stale_modules = stale_translation_modules()
 if stale_modules:
     st.error('Streamlit has outdated Translation Intelligence modules loaded. Stop and restart Streamlit from this project, '
@@ -68,11 +82,6 @@ def checkpoint(results):
 
 
 with st.sidebar:
-    logo(sidebar=True)
-    st.caption('ACCOUNT INTELLIGENCE · MVP V3')
-    with st.container(key='redthread_navigation'):
-        page = st.radio('Workspace', ['Dashboard', 'Upload Data', 'Configure Reconciliation',
-                'Translation Intelligence', 'Run Reconciliation', 'AI Research', 'Review & Approvals', 'Export Results', 'Settings'])
     st.divider()
     st.caption('Your workspace is isolated by a private resume token.')
     with st.expander('Save / resume workspace'):
