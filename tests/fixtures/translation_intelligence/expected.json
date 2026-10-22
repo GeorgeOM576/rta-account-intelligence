@@ -1,0 +1,62 @@
+{
+  "translations": {
+    "Les Ateliers de la Lune Violette": "Violet Moon Workshops",
+    "Servicios del Río de Cristal": "Crystal River Services",
+    "Werkstätten am Silbernen Morgen": "Silver Morning Workshops",
+    "Logistique du Verger Ambré": "Amber Orchard Logistics",
+    "Investigación del Puerto Azul": "Azure Harbor Research",
+    "Systeme der Goldenen Wiese": "Golden Meadow Systems",
+    "La Fabrique des Nuages Bleus": "Blue Cloud Factory",
+    "La Fábrica de las Nubes Azules": "Blue Cloud Factory",
+    "Banque des Étoiles de Papier": "Paper Star Bank"
+  },
+  "master_flagged_rows": [
+    1,
+    2,
+    3,
+    7,
+    11
+  ],
+  "source_flagged_rows": [
+    4,
+    5,
+    6,
+    7,
+    11
+  ],
+  "approve_master_rows": [
+    1,
+    2,
+    3,
+    7
+  ],
+  "approve_source_rows": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "translation_assisted_rows": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "segments": [
+    "SMB",
+    "Enterprise",
+    "Commercial",
+    "SMB",
+    "Commercial",
+    "Enterprise",
+    "SMB",
+    "Commercial",
+    "SMB",
+    "Enterprise",
+    "Commercial",
+    "Enterprise"
+  ]
+}

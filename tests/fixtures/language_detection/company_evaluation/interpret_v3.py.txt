@@ -1,0 +1,47 @@
+def interpret(text, kind, enabled=False, raw=None):
+    exclusion = preflight(text, kind, enabled)
+    base = {'language': 'und', 'confidence': 0.0, 'status': 'Uncertain',
+            'detection_outcome': AMBIGUOUS, 'detector_language': 'und', 'detector_confidence': 0.0,
+            'google_language': '', 'google_confidence': None, 'detection_provider': 'google',
+            'detection_source': 'Google detection pending — no API request made',
+            'reason': 'Awaiting an explicitly confirmed Google detection batch or manual language review.'}
+    if exclusion:
+        return {**base, 'status': 'Excluded' if kind in ('classification', 'identifier') else 'Not Required',
+                'detection_outcome': EXCLUDED, 'reason': exclusion, 'detection_source': 'Field/structural exclusion — no API request'}
+    if raw is None:
+        return base
+    if raw.get('failed'):
+        return {**base, 'detection_source': 'Google detection failed',
+                'reason': 'Detection unavailable; retry in a separately confirmed batch or confirm language manually.'}
+    code, confidence = raw['language_code'], raw['confidence']
+    result = {**base, 'google_language': code, 'google_confidence': confidence,
+              'detector_language': code, 'detector_confidence': confidence,
+              'detection_source': GOOGLE_SOURCE}
+    language = code.lower().split('-')[0]
+    alternatives = raw.get('alternatives', [])
+    margin = confidence - max((entry['confidence'] for entry in alternatives if entry['language_code'] != code), default=0)
+    words = tokens(text)
+    scripts = text_scripts(text)
+    reason = None
+    if language == 'und' or confidence < CONFIDENCE_THRESHOLD or margin < 0.20:
+        reason = 'Google confidence is low or competing languages are too close; confirm manually.'
+    elif len(scripts) > 1 and not scripts <= {'CJK', 'HIRAGANA', 'KATAKANA'}:
+        reason = 'Mixed scripts may contain proper names or multiple languages; confirm manually.'
+    elif any(language not in SCRIPT_LANGUAGES[script] for script in scripts if script in SCRIPT_LANGUAGES):
+        reason = 'Google language conflicts with the Unicode writing system; confirm manually.'
+    elif len(words) < 2 and all(ord(c) < 128 for c in text):
+        reason = 'Short proper name or abbreviation; language evidence is insufficient.'
+    elif kind == 'account_name' and (set(words) <= set(DEFAULT_BUSINESS_VOCABULARY) or
+            (set(words) & LEGAL_SUFFIXES and (language == 'en' or
+             len([word for word in words if word not in LEGAL_SUFFIXES and word not in DEFAULT_BUSINESS_VOCABULARY]) < 3))):
+        # A foreign suggestion may use descriptive context outside the suffix.
+        # English suggestions keep the original veto, regardless of context.
+        reason = 'Shared business vocabulary or legal name: review the language and preserve the entity name/suffix.'
+    elif kind == 'account_name' and language != 'en' and scripts == {'LATIN'} and len(words) < 3 and sum(c.isalpha() for c in text) < 12:
+        reason = 'Brief Latin-script proper name has limited context; confirm manually.'
+    if reason:
+        return {**result, 'reason': reason}
+    return {**result, 'language': language, 'confidence': confidence,
+            'status': 'Not Required' if language == 'en' else 'Translation Needed',
+            'detection_outcome': ENGLISH if language == 'en' else FOREIGN,
+            'reason': 'Google detection is a language candidate only; company identity and translation still require review.'}

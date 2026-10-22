@@ -1,0 +1,886 @@
+[
+  {
+    "text": "HARBOR HEALTH",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "reported",
+    "prediction": {
+      "language": "vi",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Cedar Labs",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "reported",
+    "prediction": {
+      "language": "ca",
+      "confidence": 0.5676,
+      "status": "Uncertain",
+      "reason": "Short, mixed-language or ambiguous text; inspect manually."
+    }
+  },
+  {
+    "text": "Pioneer Data",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "reported",
+    "prediction": {
+      "language": "nl",
+      "confidence": 0.9877,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Orchard Systems",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "reported",
+    "prediction": {
+      "language": "de",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Bluebird Studio",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "reported",
+    "prediction": {
+      "language": "de",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Summit Holdings",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "reported",
+    "prediction": {
+      "language": "en",
+      "confidence": 0.4286,
+      "status": "Uncertain",
+      "reason": "Short, mixed-language or ambiguous text; inspect manually."
+    }
+  },
+  {
+    "text": "Enterprise",
+    "field_kind": "classification",
+    "label": "excluded",
+    "language": "en",
+    "group": "reported",
+    "prediction": {
+      "language": "und",
+      "confidence": 0.0,
+      "status": "Uncertain",
+      "reason": "Short text; confirm the language manually."
+    }
+  },
+  {
+    "text": "Healthcare",
+    "field_kind": "classification",
+    "label": "excluded",
+    "language": "en",
+    "group": "reported",
+    "prediction": {
+      "language": "und",
+      "confidence": 0.0,
+      "status": "Uncertain",
+      "reason": "Short text; confirm the language manually."
+    }
+  },
+  {
+    "text": "Commercial",
+    "field_kind": "classification",
+    "label": "excluded",
+    "language": "en",
+    "group": "reported",
+    "prediction": {
+      "language": "und",
+      "confidence": 0.0,
+      "status": "Uncertain",
+      "reason": "Short text; confirm the language manually."
+    }
+  },
+  {
+    "text": "Aster Lantern Analytics",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "existing_xlsx",
+    "prediction": {
+      "language": "en",
+      "confidence": 1.0,
+      "status": "Not Required",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Les Ateliers de la Lune Violette",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "fr",
+    "group": "existing_xlsx",
+    "prediction": {
+      "language": "fr",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Violet Moon Workshops",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "existing_xlsx",
+    "prediction": {
+      "language": "en",
+      "confidence": 1.0,
+      "status": "Not Required",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Servicios del Río de Cristal",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "es",
+    "group": "existing_xlsx",
+    "prediction": {
+      "language": "es",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Crystal River Services",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "existing_xlsx",
+    "prediction": {
+      "language": "en",
+      "confidence": 1.0,
+      "status": "Not Required",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Werkstätten am Silbernen Morgen",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "de",
+    "group": "existing_xlsx",
+    "prediction": {
+      "language": "de",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Silver Morning Workshops",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "existing_xlsx",
+    "prediction": {
+      "language": "en",
+      "confidence": 0.8571,
+      "status": "Uncertain",
+      "reason": "Short, mixed-language or ambiguous text; inspect manually."
+    }
+  },
+  {
+    "text": "Amber Orchard Logistics",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "existing_xlsx",
+    "prediction": {
+      "language": "en",
+      "confidence": 1.0,
+      "status": "Not Required",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Logistique du Verger Ambré",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "fr",
+    "group": "existing_xlsx",
+    "prediction": {
+      "language": "fr",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Azure Harbor Research",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "existing_xlsx",
+    "prediction": {
+      "language": "de",
+      "confidence": 0.5714,
+      "status": "Uncertain",
+      "reason": "Short, mixed-language or ambiguous text; inspect manually."
+    }
+  },
+  {
+    "text": "Investigación del Puerto Azul",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "es",
+    "group": "existing_xlsx",
+    "prediction": {
+      "language": "es",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Golden Meadow Systems",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "existing_xlsx",
+    "prediction": {
+      "language": "en",
+      "confidence": 0.5714,
+      "status": "Uncertain",
+      "reason": "Short, mixed-language or ambiguous text; inspect manually."
+    }
+  },
+  {
+    "text": "Systeme der Goldenen Wiese",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "de",
+    "group": "existing_xlsx",
+    "prediction": {
+      "language": "de",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "La Fabrique des Nuages Bleus",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "fr",
+    "group": "existing_xlsx",
+    "prediction": {
+      "language": "fr",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "La Fábrica de las Nubes Azules",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "es",
+    "group": "existing_xlsx",
+    "prediction": {
+      "language": "es",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Cobalt Lantern Supply",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "existing_xlsx",
+    "prediction": {
+      "language": "en",
+      "confidence": 1.0,
+      "status": "Not Required",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Cobalt Lantarn Supply",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "existing_xlsx",
+    "prediction": {
+      "language": "en",
+      "confidence": 0.8571,
+      "status": "Uncertain",
+      "reason": "Short, mixed-language or ambiguous text; inspect manually."
+    }
+  },
+  {
+    "text": "Pine Comet Design Services",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "existing_xlsx",
+    "prediction": {
+      "language": "en",
+      "confidence": 1.0,
+      "status": "Not Required",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Unmatched Copper Kite Observatory",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "existing_xlsx",
+    "prediction": {
+      "language": "en",
+      "confidence": 1.0,
+      "status": "Not Required",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Unmatched Velvet Acorn Atelier",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "existing_xlsx",
+    "prediction": {
+      "language": "en",
+      "confidence": 0.8571,
+      "status": "Uncertain",
+      "reason": "Short, mixed-language or ambiguous text; inspect manually."
+    }
+  },
+  {
+    "text": "Banque des Étoiles de Papier",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "fr",
+    "group": "existing_xlsx",
+    "prediction": {
+      "language": "fr",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Services de santé pour les familles",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "fr",
+    "group": "challenge",
+    "prediction": {
+      "language": "fr",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Les Jardins de la Rivière",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "fr",
+    "group": "challenge",
+    "prediction": {
+      "language": "fr",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Société des Produits Agricoles",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "fr",
+    "group": "challenge",
+    "prediction": {
+      "language": "fr",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Banque des Petites Entreprises",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "fr",
+    "group": "challenge",
+    "prediction": {
+      "language": "fr",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Servicios de Salud Comunitaria",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "es",
+    "group": "challenge",
+    "prediction": {
+      "language": "es",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Compañía de Productos Agrícolas",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "es",
+    "group": "challenge",
+    "prediction": {
+      "language": "es",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Los Jardines del Sol",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "es",
+    "group": "challenge",
+    "prediction": {
+      "language": "es",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Soluciones para las Empresas",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "es",
+    "group": "challenge",
+    "prediction": {
+      "language": "es",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Deutsche Werkstätten für Gesundheit",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "de",
+    "group": "challenge",
+    "prediction": {
+      "language": "de",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Gesellschaft für Erneuerbare Energien",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "de",
+    "group": "challenge",
+    "prediction": {
+      "language": "de",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Technische Lösungen für Unternehmen",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "de",
+    "group": "challenge",
+    "prediction": {
+      "language": "de",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Handel mit Landwirtschaftlichen Produkten",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "de",
+    "group": "challenge",
+    "prediction": {
+      "language": "de",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Banco Azul",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "es",
+    "group": "challenge",
+    "prediction": {
+      "language": "es",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Élan",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "fr",
+    "group": "challenge",
+    "prediction": {
+      "language": "und",
+      "confidence": 0.0,
+      "status": "Uncertain",
+      "reason": "Short text; confirm the language manually."
+    }
+  },
+  {
+    "text": "Müller GmbH",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "de",
+    "group": "challenge",
+    "prediction": {
+      "language": "tr",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "North Star Health Services",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "challenge",
+    "prediction": {
+      "language": "en",
+      "confidence": 1.0,
+      "status": "Not Required",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Silver River Data Systems",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "challenge",
+    "prediction": {
+      "language": "da",
+      "confidence": 0.8263,
+      "status": "Uncertain",
+      "reason": "Short, mixed-language or ambiguous text; inspect manually."
+    }
+  },
+  {
+    "text": "Cedar Research Holdings",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "challenge",
+    "prediction": {
+      "language": "en",
+      "confidence": 1.0,
+      "status": "Not Required",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Blue Harbor Design Studio",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "challenge",
+    "prediction": {
+      "language": "da",
+      "confidence": 0.8571,
+      "status": "Uncertain",
+      "reason": "Short, mixed-language or ambiguous text; inspect manually."
+    }
+  },
+  {
+    "text": "Enterprise Data Services",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "challenge",
+    "prediction": {
+      "language": "it",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Commercial Health Systems",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "challenge",
+    "prediction": {
+      "language": "en",
+      "confidence": 1.0,
+      "status": "Not Required",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Healthcare Research Labs",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "challenge",
+    "prediction": {
+      "language": "en",
+      "confidence": 1.0,
+      "status": "Not Required",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Orion",
+    "field_kind": "account_name",
+    "label": "ambiguous",
+    "language": null,
+    "group": "challenge",
+    "prediction": {
+      "language": "und",
+      "confidence": 0.0,
+      "status": "Uncertain",
+      "reason": "Short text; confirm the language manually."
+    }
+  },
+  {
+    "text": "Acme",
+    "field_kind": "account_name",
+    "label": "ambiguous",
+    "language": null,
+    "group": "challenge",
+    "prediction": {
+      "language": "und",
+      "confidence": 0.0,
+      "status": "Uncertain",
+      "reason": "Short text; confirm the language manually."
+    }
+  },
+  {
+    "text": "Nova",
+    "field_kind": "account_name",
+    "label": "ambiguous",
+    "language": null,
+    "group": "challenge",
+    "prediction": {
+      "language": "und",
+      "confidence": 0.0,
+      "status": "Uncertain",
+      "reason": "Short text; confirm the language manually."
+    }
+  },
+  {
+    "text": "Café International",
+    "field_kind": "account_name",
+    "label": "ambiguous",
+    "language": null,
+    "group": "challenge",
+    "prediction": {
+      "language": "fr",
+      "confidence": 0.5714,
+      "status": "Uncertain",
+      "reason": "Short, mixed-language or ambiguous text; inspect manually."
+    }
+  },
+  {
+    "text": "Data Studio",
+    "field_kind": "account_name",
+    "label": "ambiguous",
+    "language": null,
+    "group": "challenge",
+    "prediction": {
+      "language": "it",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Commercial",
+    "field_kind": "account_name",
+    "label": "ambiguous",
+    "language": null,
+    "group": "challenge",
+    "prediction": {
+      "language": "und",
+      "confidence": 0.0,
+      "status": "Uncertain",
+      "reason": "Short text; confirm the language manually."
+    }
+  },
+  {
+    "text": "Health",
+    "field_kind": "account_name",
+    "label": "ambiguous",
+    "language": null,
+    "group": "challenge",
+    "prediction": {
+      "language": "und",
+      "confidence": 0.0,
+      "status": "Uncertain",
+      "reason": "Short text; confirm the language manually."
+    }
+  },
+  {
+    "text": "IBM",
+    "field_kind": "account_name",
+    "label": "ambiguous",
+    "language": null,
+    "group": "challenge",
+    "prediction": {
+      "language": "und",
+      "confidence": 0.0,
+      "status": "Not Required",
+      "reason": "Identifier or code."
+    }
+  },
+  {
+    "text": "We provide financial services for businesses across the country.",
+    "field_kind": "description",
+    "label": "english",
+    "language": "en",
+    "group": "challenge",
+    "prediction": {
+      "language": "en",
+      "confidence": 1.0,
+      "status": "Not Required",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Nous proposons des services de santé pour toutes les familles.",
+    "field_kind": "description",
+    "label": "foreign",
+    "language": "fr",
+    "group": "challenge",
+    "prediction": {
+      "language": "fr",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Ofrecemos servicios financieros para las pequeñas empresas.",
+    "field_kind": "description",
+    "label": "foreign",
+    "language": "es",
+    "group": "challenge",
+    "prediction": {
+      "language": "es",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Wir entwickeln technische Lösungen für kleine Unternehmen.",
+    "field_kind": "description",
+    "label": "foreign",
+    "language": "de",
+    "group": "challenge",
+    "prediction": {
+      "language": "de",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Please contact our team for support with your account.",
+    "field_kind": "free_text",
+    "label": "english",
+    "language": "en",
+    "group": "challenge",
+    "prediction": {
+      "language": "en",
+      "confidence": 1.0,
+      "status": "Not Required",
+      "reason": ""
+    }
+  },
+  {
+    "text": "Veuillez contacter notre équipe pour obtenir des informations.",
+    "field_kind": "free_text",
+    "label": "foreign",
+    "language": "fr",
+    "group": "challenge",
+    "prediction": {
+      "language": "fr",
+      "confidence": 1.0,
+      "status": "Translation Needed",
+      "reason": ""
+    }
+  },
+  {
+    "text": "SMB",
+    "field_kind": "classification",
+    "label": "excluded",
+    "language": "en",
+    "group": "challenge",
+    "prediction": {
+      "language": "und",
+      "confidence": 0.0,
+      "status": "Not Required",
+      "reason": "Identifier or code."
+    }
+  },
+  {
+    "text": "Verify",
+    "field_kind": "classification",
+    "label": "excluded",
+    "language": "en",
+    "group": "challenge",
+    "prediction": {
+      "language": "und",
+      "confidence": 0.0,
+      "status": "Uncertain",
+      "reason": "Short text; confirm the language manually."
+    }
+  }
+]

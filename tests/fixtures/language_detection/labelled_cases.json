@@ -1,0 +1,478 @@
+[
+  {
+    "text": "HARBOR HEALTH",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "reported"
+  },
+  {
+    "text": "Cedar Labs",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "reported"
+  },
+  {
+    "text": "Pioneer Data",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "reported"
+  },
+  {
+    "text": "Orchard Systems",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "reported"
+  },
+  {
+    "text": "Bluebird Studio",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "reported"
+  },
+  {
+    "text": "Summit Holdings",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "reported"
+  },
+  {
+    "text": "Enterprise",
+    "field_kind": "classification",
+    "label": "excluded",
+    "language": "en",
+    "group": "reported"
+  },
+  {
+    "text": "Healthcare",
+    "field_kind": "classification",
+    "label": "excluded",
+    "language": "en",
+    "group": "reported"
+  },
+  {
+    "text": "Commercial",
+    "field_kind": "classification",
+    "label": "excluded",
+    "language": "en",
+    "group": "reported"
+  },
+  {
+    "text": "Aster Lantern Analytics",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "existing_xlsx"
+  },
+  {
+    "text": "Les Ateliers de la Lune Violette",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "fr",
+    "group": "existing_xlsx"
+  },
+  {
+    "text": "Violet Moon Workshops",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "existing_xlsx"
+  },
+  {
+    "text": "Servicios del Río de Cristal",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "es",
+    "group": "existing_xlsx"
+  },
+  {
+    "text": "Crystal River Services",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "existing_xlsx"
+  },
+  {
+    "text": "Werkstätten am Silbernen Morgen",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "de",
+    "group": "existing_xlsx"
+  },
+  {
+    "text": "Silver Morning Workshops",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "existing_xlsx"
+  },
+  {
+    "text": "Amber Orchard Logistics",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "existing_xlsx"
+  },
+  {
+    "text": "Logistique du Verger Ambré",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "fr",
+    "group": "existing_xlsx"
+  },
+  {
+    "text": "Azure Harbor Research",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "existing_xlsx"
+  },
+  {
+    "text": "Investigación del Puerto Azul",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "es",
+    "group": "existing_xlsx"
+  },
+  {
+    "text": "Golden Meadow Systems",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "existing_xlsx"
+  },
+  {
+    "text": "Systeme der Goldenen Wiese",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "de",
+    "group": "existing_xlsx"
+  },
+  {
+    "text": "La Fabrique des Nuages Bleus",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "fr",
+    "group": "existing_xlsx"
+  },
+  {
+    "text": "La Fábrica de las Nubes Azules",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "es",
+    "group": "existing_xlsx"
+  },
+  {
+    "text": "Cobalt Lantern Supply",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "existing_xlsx"
+  },
+  {
+    "text": "Cobalt Lantarn Supply",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "existing_xlsx"
+  },
+  {
+    "text": "Pine Comet Design Services",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "existing_xlsx"
+  },
+  {
+    "text": "Unmatched Copper Kite Observatory",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "existing_xlsx"
+  },
+  {
+    "text": "Unmatched Velvet Acorn Atelier",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "existing_xlsx"
+  },
+  {
+    "text": "Banque des Étoiles de Papier",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "fr",
+    "group": "existing_xlsx"
+  },
+  {
+    "text": "Services de santé pour les familles",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "fr",
+    "group": "challenge"
+  },
+  {
+    "text": "Les Jardins de la Rivière",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "fr",
+    "group": "challenge"
+  },
+  {
+    "text": "Société des Produits Agricoles",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "fr",
+    "group": "challenge"
+  },
+  {
+    "text": "Banque des Petites Entreprises",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "fr",
+    "group": "challenge"
+  },
+  {
+    "text": "Servicios de Salud Comunitaria",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "es",
+    "group": "challenge"
+  },
+  {
+    "text": "Compañía de Productos Agrícolas",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "es",
+    "group": "challenge"
+  },
+  {
+    "text": "Los Jardines del Sol",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "es",
+    "group": "challenge"
+  },
+  {
+    "text": "Soluciones para las Empresas",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "es",
+    "group": "challenge"
+  },
+  {
+    "text": "Deutsche Werkstätten für Gesundheit",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "de",
+    "group": "challenge"
+  },
+  {
+    "text": "Gesellschaft für Erneuerbare Energien",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "de",
+    "group": "challenge"
+  },
+  {
+    "text": "Technische Lösungen für Unternehmen",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "de",
+    "group": "challenge"
+  },
+  {
+    "text": "Handel mit Landwirtschaftlichen Produkten",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "de",
+    "group": "challenge"
+  },
+  {
+    "text": "Banco Azul",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "es",
+    "group": "challenge"
+  },
+  {
+    "text": "Élan",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "fr",
+    "group": "challenge"
+  },
+  {
+    "text": "Müller GmbH",
+    "field_kind": "account_name",
+    "label": "foreign",
+    "language": "de",
+    "group": "challenge"
+  },
+  {
+    "text": "North Star Health Services",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "challenge"
+  },
+  {
+    "text": "Silver River Data Systems",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "challenge"
+  },
+  {
+    "text": "Cedar Research Holdings",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "challenge"
+  },
+  {
+    "text": "Blue Harbor Design Studio",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "challenge"
+  },
+  {
+    "text": "Enterprise Data Services",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "challenge"
+  },
+  {
+    "text": "Commercial Health Systems",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "challenge"
+  },
+  {
+    "text": "Healthcare Research Labs",
+    "field_kind": "account_name",
+    "label": "english",
+    "language": "en",
+    "group": "challenge"
+  },
+  {
+    "text": "Orion",
+    "field_kind": "account_name",
+    "label": "ambiguous",
+    "language": null,
+    "group": "challenge"
+  },
+  {
+    "text": "Acme",
+    "field_kind": "account_name",
+    "label": "ambiguous",
+    "language": null,
+    "group": "challenge"
+  },
+  {
+    "text": "Nova",
+    "field_kind": "account_name",
+    "label": "ambiguous",
+    "language": null,
+    "group": "challenge"
+  },
+  {
+    "text": "Café International",
+    "field_kind": "account_name",
+    "label": "ambiguous",
+    "language": null,
+    "group": "challenge"
+  },
+  {
+    "text": "Data Studio",
+    "field_kind": "account_name",
+    "label": "ambiguous",
+    "language": null,
+    "group": "challenge"
+  },
+  {
+    "text": "Commercial",
+    "field_kind": "account_name",
+    "label": "ambiguous",
+    "language": null,
+    "group": "challenge"
+  },
+  {
+    "text": "Health",
+    "field_kind": "account_name",
+    "label": "ambiguous",
+    "language": null,
+    "group": "challenge"
+  },
+  {
+    "text": "IBM",
+    "field_kind": "account_name",
+    "label": "ambiguous",
+    "language": null,
+    "group": "challenge"
+  },
+  {
+    "text": "We provide financial services for businesses across the country.",
+    "field_kind": "description",
+    "label": "english",
+    "language": "en",
+    "group": "challenge"
+  },
+  {
+    "text": "Nous proposons des services de santé pour toutes les familles.",
+    "field_kind": "description",
+    "label": "foreign",
+    "language": "fr",
+    "group": "challenge"
+  },
+  {
+    "text": "Ofrecemos servicios financieros para las pequeñas empresas.",
+    "field_kind": "description",
+    "label": "foreign",
+    "language": "es",
+    "group": "challenge"
+  },
+  {
+    "text": "Wir entwickeln technische Lösungen für kleine Unternehmen.",
+    "field_kind": "description",
+    "label": "foreign",
+    "language": "de",
+    "group": "challenge"
+  },
+  {
+    "text": "Please contact our team for support with your account.",
+    "field_kind": "free_text",
+    "label": "english",
+    "language": "en",
+    "group": "challenge"
+  },
+  {
+    "text": "Veuillez contacter notre équipe pour obtenir des informations.",
+    "field_kind": "free_text",
+    "label": "foreign",
+    "language": "fr",
+    "group": "challenge"
+  },
+  {
+    "text": "SMB",
+    "field_kind": "classification",
+    "label": "excluded",
+    "language": "en",
+    "group": "challenge"
+  },
+  {
+    "text": "Verify",
+    "field_kind": "classification",
+    "label": "excluded",
+    "language": "en",
+    "group": "challenge"
+  }
+]

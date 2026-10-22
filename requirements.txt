@@ -1,0 +1,10 @@
+streamlit>=1.45,<2
+polars>=1.30,<2
+rapidfuzz>=3.13,<4
+openpyxl>=3.1.5,<4
+requests>=2.32,<3
+jsonschema>=4.23,<5
+langdetect==1.0.9
+pytest>=8.3,<10
+google-cloud-translate>=3.28,<4
+pandas>=2.2,<4

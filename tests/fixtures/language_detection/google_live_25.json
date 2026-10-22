@@ -1,0 +1,461 @@
+{
+  "project": "rta-translation",
+  "policy": "google-v3-field-aware-v1",
+  "build": "734aaef04f39a5b08879bfaf0904403024e30f4cf06a953d9911d86b83b2d9cb",
+  "retry": null,
+  "translation_requests": 0,
+  "results": [
+    {
+      "name": "HARBOR HEALTH",
+      "expected_language": "en",
+      "characters": 13,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "en",
+        "confidence": 0.9660536646842957,
+        "alternatives": []
+      },
+      "google_language": "en",
+      "google_confidence": 0.9660536646842957,
+      "rta_classification": "English",
+      "rta_language": "en",
+      "reason": "Google detection is a language candidate only; company identity and translation still require review."
+    },
+    {
+      "name": "Cedar Labs",
+      "expected_language": "en",
+      "characters": 10,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "en",
+        "confidence": 0.547145664691925,
+        "alternatives": []
+      },
+      "google_language": "en",
+      "google_confidence": 0.547145664691925,
+      "rta_classification": "Manual review",
+      "rta_language": "und",
+      "reason": "Google confidence is low or competing languages are too close; confirm manually."
+    },
+    {
+      "name": "Summit Holdings",
+      "expected_language": "en",
+      "characters": 15,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "en",
+        "confidence": 0.9284358620643616,
+        "alternatives": []
+      },
+      "google_language": "en",
+      "google_confidence": 0.9284358620643616,
+      "rta_classification": "English",
+      "rta_language": "en",
+      "reason": "Google detection is a language candidate only; company identity and translation still require review."
+    },
+    {
+      "name": "Pioneer Data",
+      "expected_language": "en",
+      "characters": 12,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "en",
+        "confidence": 0.43717631697654724,
+        "alternatives": []
+      },
+      "google_language": "en",
+      "google_confidence": 0.43717631697654724,
+      "rta_classification": "Manual review",
+      "rta_language": "und",
+      "reason": "Google confidence is low or competing languages are too close; confirm manually."
+    },
+    {
+      "name": "Orchard Systems",
+      "expected_language": "en",
+      "characters": 15,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "en",
+        "confidence": 1.0,
+        "alternatives": []
+      },
+      "google_language": "en",
+      "google_confidence": 1.0,
+      "rta_classification": "English",
+      "rta_language": "en",
+      "reason": "Google detection is a language candidate only; company identity and translation still require review."
+    },
+    {
+      "name": "Bluebird Studio",
+      "expected_language": "en",
+      "characters": 15,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "en",
+        "confidence": 0.9261302947998047,
+        "alternatives": []
+      },
+      "google_language": "en",
+      "google_confidence": 0.9261302947998047,
+      "rta_classification": "English",
+      "rta_language": "en",
+      "reason": "Google detection is a language candidate only; company identity and translation still require review."
+    },
+    {
+      "name": "Boulangerie du Soleil",
+      "expected_language": "fr",
+      "characters": 21,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "fr",
+        "confidence": 0.7809188961982727,
+        "alternatives": []
+      },
+      "google_language": "fr",
+      "google_confidence": 0.7809188961982727,
+      "rta_classification": "Manual review",
+      "rta_language": "und",
+      "reason": "Google confidence is low or competing languages are too close; confirm manually."
+    },
+    {
+      "name": "Les Jardins de Provence",
+      "expected_language": "fr",
+      "characters": 23,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "fr",
+        "confidence": 1.0,
+        "alternatives": []
+      },
+      "google_language": "fr",
+      "google_confidence": 1.0,
+      "rta_classification": "Foreign-language candidate",
+      "rta_language": "fr",
+      "reason": "Google detection is a language candidate only; company identity and translation still require review."
+    },
+    {
+      "name": "Société des Transports",
+      "expected_language": "fr",
+      "characters": 22,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "fr",
+        "confidence": 0.9898074865341187,
+        "alternatives": []
+      },
+      "google_language": "fr",
+      "google_confidence": 0.9898074865341187,
+      "rta_classification": "Foreign-language candidate",
+      "rta_language": "fr",
+      "reason": "Google detection is a language candidate only; company identity and translation still require review."
+    },
+    {
+      "name": "Panadería La Esperanza",
+      "expected_language": "es",
+      "characters": 22,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "es",
+        "confidence": 1.0,
+        "alternatives": []
+      },
+      "google_language": "es",
+      "google_confidence": 1.0,
+      "rta_classification": "Foreign-language candidate",
+      "rta_language": "es",
+      "reason": "Google detection is a language candidate only; company identity and translation still require review."
+    },
+    {
+      "name": "Servicios de Construcción",
+      "expected_language": "es",
+      "characters": 25,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "es",
+        "confidence": 1.0,
+        "alternatives": []
+      },
+      "google_language": "es",
+      "google_confidence": 1.0,
+      "rta_classification": "Foreign-language candidate",
+      "rta_language": "es",
+      "reason": "Google detection is a language candidate only; company identity and translation still require review."
+    },
+    {
+      "name": "Distribuidora El Sol",
+      "expected_language": "es",
+      "characters": 20,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "es",
+        "confidence": 1.0,
+        "alternatives": []
+      },
+      "google_language": "es",
+      "google_confidence": 1.0,
+      "rta_classification": "Foreign-language candidate",
+      "rta_language": "es",
+      "reason": "Google detection is a language candidate only; company identity and translation still require review."
+    },
+    {
+      "name": "Deutsche Maschinenfabrik",
+      "expected_language": "de",
+      "characters": 24,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "de",
+        "confidence": 0.9855693578720093,
+        "alternatives": []
+      },
+      "google_language": "de",
+      "google_confidence": 0.9855693578720093,
+      "rta_classification": "Manual review",
+      "rta_language": "und",
+      "reason": "A short non-English company name is not automatically a translation candidate; confirm manually."
+    },
+    {
+      "name": "Bäckerei am Markt",
+      "expected_language": "de",
+      "characters": 17,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "de",
+        "confidence": 0.9583151936531067,
+        "alternatives": []
+      },
+      "google_language": "de",
+      "google_confidence": 0.9583151936531067,
+      "rta_classification": "Foreign-language candidate",
+      "rta_language": "de",
+      "reason": "Google detection is a language candidate only; company identity and translation still require review."
+    },
+    {
+      "name": "Haus der Technik",
+      "expected_language": "de",
+      "characters": 16,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "de",
+        "confidence": 0.8993325233459473,
+        "alternatives": []
+      },
+      "google_language": "de",
+      "google_confidence": 0.8993325233459473,
+      "rta_classification": "Manual review",
+      "rta_language": "und",
+      "reason": "Google confidence is low or competing languages are too close; confirm manually."
+    },
+    {
+      "name": "Tecnologia e Soluções",
+      "expected_language": "pt",
+      "characters": 21,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "pt",
+        "confidence": 0.9894593954086304,
+        "alternatives": []
+      },
+      "google_language": "pt",
+      "google_confidence": 0.9894593954086304,
+      "rta_classification": "Foreign-language candidate",
+      "rta_language": "pt",
+      "reason": "Google detection is a language candidate only; company identity and translation still require review."
+    },
+    {
+      "name": "Comércio de Alimentos",
+      "expected_language": "pt",
+      "characters": 21,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "pt",
+        "confidence": 0.926469624042511,
+        "alternatives": []
+      },
+      "google_language": "pt",
+      "google_confidence": 0.926469624042511,
+      "rta_classification": "Foreign-language candidate",
+      "rta_language": "pt",
+      "reason": "Google detection is a language candidate only; company identity and translation still require review."
+    },
+    {
+      "name": "Azienda Agricola Toscana",
+      "expected_language": "it",
+      "characters": 24,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "it",
+        "confidence": 0.9879668354988098,
+        "alternatives": []
+      },
+      "google_language": "it",
+      "google_confidence": 0.9879668354988098,
+      "rta_classification": "Foreign-language candidate",
+      "rta_language": "it",
+      "reason": "Google detection is a language candidate only; company identity and translation still require review."
+    },
+    {
+      "name": "Forno della Famiglia",
+      "expected_language": "it",
+      "characters": 20,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "it",
+        "confidence": 1.0,
+        "alternatives": []
+      },
+      "google_language": "it",
+      "google_confidence": 1.0,
+      "rta_classification": "Foreign-language candidate",
+      "rta_language": "it",
+      "reason": "Google detection is a language candidate only; company identity and translation still require review."
+    },
+    {
+      "name": "株式会社さくら商事",
+      "expected_language": "ja",
+      "characters": 9,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "ja",
+        "confidence": 1.0,
+        "alternatives": []
+      },
+      "google_language": "ja",
+      "google_confidence": 1.0,
+      "rta_classification": "Manual review",
+      "rta_language": "und",
+      "reason": "A short non-English company name is not automatically a translation candidate; confirm manually."
+    },
+    {
+      "name": "北京科技有限公司",
+      "expected_language": "zh",
+      "characters": 8,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "zh-CN",
+        "confidence": 1.0,
+        "alternatives": []
+      },
+      "google_language": "zh-CN",
+      "google_confidence": 1.0,
+      "rta_classification": "Manual review",
+      "rta_language": "und",
+      "reason": "A short non-English company name is not automatically a translation candidate; confirm manually."
+    },
+    {
+      "name": "شركة النور للتجارة",
+      "expected_language": "ar",
+      "characters": 18,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "ar",
+        "confidence": 0.9770841598510742,
+        "alternatives": []
+      },
+      "google_language": "ar",
+      "google_confidence": 0.9770841598510742,
+      "rta_classification": "Foreign-language candidate",
+      "rta_language": "ar",
+      "reason": "Google detection is a language candidate only; company identity and translation still require review."
+    },
+    {
+      "name": "Müller GmbH",
+      "expected_language": "ambiguous",
+      "characters": 11,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "de",
+        "confidence": 0.5003052949905396,
+        "alternatives": []
+      },
+      "google_language": "de",
+      "google_confidence": 0.5003052949905396,
+      "rta_classification": "Manual review",
+      "rta_language": "und",
+      "reason": "Google confidence is low or competing languages are too close; confirm manually."
+    },
+    {
+      "name": "Élan",
+      "expected_language": "ambiguous",
+      "characters": 4,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "fr",
+        "confidence": 0.5652173757553101,
+        "alternatives": []
+      },
+      "google_language": "fr",
+      "google_confidence": 0.5652173757553101,
+      "rta_classification": "Manual review",
+      "rta_language": "und",
+      "reason": "Google confidence is low or competing languages are too close; confirm manually."
+    },
+    {
+      "name": "Global Tech Solutions",
+      "expected_language": "en",
+      "characters": 21,
+      "raw": {
+        "provider": "google",
+        "policy": "google-v3-field-aware-v1",
+        "language_code": "en",
+        "confidence": 0.965993344783783,
+        "alternatives": []
+      },
+      "google_language": "en",
+      "google_confidence": 0.965993344783783,
+      "rta_classification": "English",
+      "rta_language": "en",
+      "reason": "Google detection is a language candidate only; company identity and translation still require review."
+    }
+  ],
+  "requests_attempted": 25,
+  "confirmed_response_characters": 427,
+  "uncertain_characters": 0,
+  "metrics": {
+    "definitive_cases": 23,
+    "raw_correct_language": 23,
+    "raw_language_accuracy": 1.0,
+    "raw_foreign_precision": 1.0,
+    "raw_foreign_recall": 1.0,
+    "rta_foreign_precision": 1.0,
+    "rta_foreign_recall": 0.6875,
+    "rta_confusion": {
+      "English": {
+        "English": 5,
+        "Foreign-language candidate": 0,
+        "Manual review": 2
+      },
+      "Foreign": {
+        "English": 0,
+        "Foreign-language candidate": 11,
+        "Manual review": 5
+      }
+    },
+    "rta_correct_language_and_routing": 16
+  },
+  "database_file_unchanged": true,
+  "finished_utc": "2026-10-22T01:37:10.070154+00:00"
+}

@@ -1,0 +1,1392 @@
+{
+  "policy": "field-aware-business-v2",
+  "baseline": {
+    "cases": 68,
+    "labels": {
+      "english": 27,
+      "excluded": 5,
+      "foreign": 28,
+      "ambiguous": 8
+    },
+    "foreign_candidates": 33,
+    "true_positives": 27,
+    "false_positives": 6,
+    "false_negatives": 1,
+    "precision": 0.8181818181818182,
+    "recall": 0.9642857142857143,
+    "correct_foreign_language_codes": 26,
+    "english_confident": 13,
+    "english_manual_review": 9,
+    "false_positive_texts": [
+      "HARBOR HEALTH",
+      "Pioneer Data",
+      "Orchard Systems",
+      "Bluebird Studio",
+      "Enterprise Data Services",
+      "Data Studio"
+    ],
+    "missed_foreign_texts": [
+      "Élan"
+    ],
+    "ambiguous_texts": [
+      "Cedar Labs",
+      "Summit Holdings",
+      "Enterprise",
+      "Healthcare",
+      "Commercial",
+      "Silver Morning Workshops",
+      "Azure Harbor Research",
+      "Golden Meadow Systems",
+      "Cobalt Lantarn Supply",
+      "Unmatched Velvet Acorn Atelier",
+      "Élan",
+      "Silver River Data Systems",
+      "Blue Harbor Design Studio",
+      "Orion",
+      "Acme",
+      "Nova",
+      "Café International",
+      "Commercial",
+      "Health",
+      "Verify"
+    ],
+    "foreign_by_language": {
+      "fr": 10,
+      "es": 9,
+      "de": 8
+    }
+  },
+  "current": {
+    "cases": 68,
+    "labels": {
+      "english": 27,
+      "excluded": 5,
+      "foreign": 28,
+      "ambiguous": 8
+    },
+    "foreign_candidates": 26,
+    "true_positives": 26,
+    "false_positives": 0,
+    "false_negatives": 2,
+    "precision": 1.0,
+    "recall": 0.9285714285714286,
+    "correct_foreign_language_codes": 26,
+    "english_confident": 23,
+    "english_manual_review": 4,
+    "false_positive_texts": [],
+    "missed_foreign_texts": [
+      "Élan",
+      "Müller GmbH"
+    ],
+    "ambiguous_texts": [
+      "Cobalt Lantarn Supply",
+      "Unmatched Velvet Acorn Atelier",
+      "Élan",
+      "Müller GmbH",
+      "Enterprise Data Services",
+      "Commercial Health Systems",
+      "Orion",
+      "Acme",
+      "Nova",
+      "Café International",
+      "Data Studio",
+      "Commercial",
+      "Health"
+    ],
+    "foreign_by_language": {
+      "fr": 10,
+      "es": 9,
+      "de": 7
+    }
+  },
+  "reported_cases": [
+    {
+      "text": "HARBOR HEALTH",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "reported",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "vi",
+        "detector_confidence": 1.0
+      },
+      "before": {
+        "language": "vi",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "reason": ""
+      }
+    },
+    {
+      "text": "Cedar Labs",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "reported",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "ca",
+        "detector_confidence": 0.5676
+      },
+      "before": {
+        "language": "ca",
+        "confidence": 0.5676,
+        "status": "Uncertain",
+        "reason": "Short, mixed-language or ambiguous text; inspect manually."
+      }
+    },
+    {
+      "text": "Pioneer Data",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "reported",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "nl",
+        "detector_confidence": 0.9877
+      },
+      "before": {
+        "language": "nl",
+        "confidence": 0.9877,
+        "status": "Translation Needed",
+        "reason": ""
+      }
+    },
+    {
+      "text": "Orchard Systems",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "reported",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "de",
+        "detector_confidence": 1.0
+      },
+      "before": {
+        "language": "de",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "reason": ""
+      }
+    },
+    {
+      "text": "Bluebird Studio",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "reported",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "de",
+        "detector_confidence": 1.0
+      },
+      "before": {
+        "language": "de",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "reason": ""
+      }
+    },
+    {
+      "text": "Summit Holdings",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "reported",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "en",
+        "detector_confidence": 0.4286
+      },
+      "before": {
+        "language": "en",
+        "confidence": 0.4286,
+        "status": "Uncertain",
+        "reason": "Short, mixed-language or ambiguous text; inspect manually."
+      }
+    },
+    {
+      "text": "Enterprise",
+      "field_kind": "classification",
+      "label": "excluded",
+      "language": "en",
+      "group": "reported",
+      "prediction": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Excluded",
+        "detection_outcome": "Excluded field — Translation Disabled",
+        "reason": "Field excluded from translation; enable classification fields explicitly if needed.",
+        "detector_language": "und",
+        "detector_confidence": 0.0
+      },
+      "before": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Uncertain",
+        "reason": "Short text; confirm the language manually."
+      }
+    },
+    {
+      "text": "Healthcare",
+      "field_kind": "classification",
+      "label": "excluded",
+      "language": "en",
+      "group": "reported",
+      "prediction": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Excluded",
+        "detection_outcome": "Excluded field — Translation Disabled",
+        "reason": "Field excluded from translation; enable classification fields explicitly if needed.",
+        "detector_language": "und",
+        "detector_confidence": 0.0
+      },
+      "before": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Uncertain",
+        "reason": "Short text; confirm the language manually."
+      }
+    },
+    {
+      "text": "Commercial",
+      "field_kind": "classification",
+      "label": "excluded",
+      "language": "en",
+      "group": "reported",
+      "prediction": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Excluded",
+        "detection_outcome": "Excluded field — Translation Disabled",
+        "reason": "Field excluded from translation; enable classification fields explicitly if needed.",
+        "detector_language": "und",
+        "detector_confidence": 0.0
+      },
+      "before": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Uncertain",
+        "reason": "Short text; confirm the language manually."
+      }
+    }
+  ],
+  "predictions": [
+    {
+      "text": "HARBOR HEALTH",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "reported",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "vi",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Cedar Labs",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "reported",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "ca",
+        "detector_confidence": 0.5676
+      }
+    },
+    {
+      "text": "Pioneer Data",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "reported",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "nl",
+        "detector_confidence": 0.9877
+      }
+    },
+    {
+      "text": "Orchard Systems",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "reported",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "de",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Bluebird Studio",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "reported",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "de",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Summit Holdings",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "reported",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "en",
+        "detector_confidence": 0.4286
+      }
+    },
+    {
+      "text": "Enterprise",
+      "field_kind": "classification",
+      "label": "excluded",
+      "language": "en",
+      "group": "reported",
+      "prediction": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Excluded",
+        "detection_outcome": "Excluded field — Translation Disabled",
+        "reason": "Field excluded from translation; enable classification fields explicitly if needed.",
+        "detector_language": "und",
+        "detector_confidence": 0.0
+      }
+    },
+    {
+      "text": "Healthcare",
+      "field_kind": "classification",
+      "label": "excluded",
+      "language": "en",
+      "group": "reported",
+      "prediction": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Excluded",
+        "detection_outcome": "Excluded field — Translation Disabled",
+        "reason": "Field excluded from translation; enable classification fields explicitly if needed.",
+        "detector_language": "und",
+        "detector_confidence": 0.0
+      }
+    },
+    {
+      "text": "Commercial",
+      "field_kind": "classification",
+      "label": "excluded",
+      "language": "en",
+      "group": "reported",
+      "prediction": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Excluded",
+        "detection_outcome": "Excluded field — Translation Disabled",
+        "reason": "Field excluded from translation; enable classification fields explicitly if needed.",
+        "detector_language": "und",
+        "detector_confidence": 0.0
+      }
+    },
+    {
+      "text": "Aster Lantern Analytics",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "existing_xlsx",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "en",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Les Ateliers de la Lune Violette",
+      "field_kind": "account_name",
+      "label": "foreign",
+      "language": "fr",
+      "group": "existing_xlsx",
+      "prediction": {
+        "language": "fr",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "fr",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Violet Moon Workshops",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "existing_xlsx",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "en",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Servicios del Río de Cristal",
+      "field_kind": "account_name",
+      "label": "foreign",
+      "language": "es",
+      "group": "existing_xlsx",
+      "prediction": {
+        "language": "es",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "es",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Crystal River Services",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "existing_xlsx",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "en",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Werkstätten am Silbernen Morgen",
+      "field_kind": "account_name",
+      "label": "foreign",
+      "language": "de",
+      "group": "existing_xlsx",
+      "prediction": {
+        "language": "de",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "de",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Silver Morning Workshops",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "existing_xlsx",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "en",
+        "detector_confidence": 0.8571
+      }
+    },
+    {
+      "text": "Amber Orchard Logistics",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "existing_xlsx",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "en",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Logistique du Verger Ambré",
+      "field_kind": "account_name",
+      "label": "foreign",
+      "language": "fr",
+      "group": "existing_xlsx",
+      "prediction": {
+        "language": "fr",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "fr",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Azure Harbor Research",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "existing_xlsx",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "de",
+        "detector_confidence": 0.5714
+      }
+    },
+    {
+      "text": "Investigación del Puerto Azul",
+      "field_kind": "account_name",
+      "label": "foreign",
+      "language": "es",
+      "group": "existing_xlsx",
+      "prediction": {
+        "language": "es",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "es",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Golden Meadow Systems",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "existing_xlsx",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "en",
+        "detector_confidence": 0.5714
+      }
+    },
+    {
+      "text": "Systeme der Goldenen Wiese",
+      "field_kind": "account_name",
+      "label": "foreign",
+      "language": "de",
+      "group": "existing_xlsx",
+      "prediction": {
+        "language": "de",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "de",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "La Fabrique des Nuages Bleus",
+      "field_kind": "account_name",
+      "label": "foreign",
+      "language": "fr",
+      "group": "existing_xlsx",
+      "prediction": {
+        "language": "fr",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "fr",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "La Fábrica de las Nubes Azules",
+      "field_kind": "account_name",
+      "label": "foreign",
+      "language": "es",
+      "group": "existing_xlsx",
+      "prediction": {
+        "language": "es",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "es",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Cobalt Lantern Supply",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "existing_xlsx",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "en",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Cobalt Lantarn Supply",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "existing_xlsx",
+      "prediction": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Uncertain",
+        "detection_outcome": "Unknown/Ambiguous — Manual Language Review",
+        "reason": "Short business name, proper noun or insufficient language evidence; confirm manually.",
+        "detector_language": "en",
+        "detector_confidence": 0.8571
+      }
+    },
+    {
+      "text": "Pine Comet Design Services",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "existing_xlsx",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "en",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Unmatched Copper Kite Observatory",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "existing_xlsx",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "en",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Unmatched Velvet Acorn Atelier",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "existing_xlsx",
+      "prediction": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Uncertain",
+        "detection_outcome": "Unknown/Ambiguous — Manual Language Review",
+        "reason": "Language evidence is incomplete or conflicting; confirm manually.",
+        "detector_language": "en",
+        "detector_confidence": 0.8571
+      }
+    },
+    {
+      "text": "Banque des Étoiles de Papier",
+      "field_kind": "account_name",
+      "label": "foreign",
+      "language": "fr",
+      "group": "existing_xlsx",
+      "prediction": {
+        "language": "fr",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "fr",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Services de santé pour les familles",
+      "field_kind": "account_name",
+      "label": "foreign",
+      "language": "fr",
+      "group": "challenge",
+      "prediction": {
+        "language": "fr",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "fr",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Les Jardins de la Rivière",
+      "field_kind": "account_name",
+      "label": "foreign",
+      "language": "fr",
+      "group": "challenge",
+      "prediction": {
+        "language": "fr",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "fr",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Société des Produits Agricoles",
+      "field_kind": "account_name",
+      "label": "foreign",
+      "language": "fr",
+      "group": "challenge",
+      "prediction": {
+        "language": "fr",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "fr",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Banque des Petites Entreprises",
+      "field_kind": "account_name",
+      "label": "foreign",
+      "language": "fr",
+      "group": "challenge",
+      "prediction": {
+        "language": "fr",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "fr",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Servicios de Salud Comunitaria",
+      "field_kind": "account_name",
+      "label": "foreign",
+      "language": "es",
+      "group": "challenge",
+      "prediction": {
+        "language": "es",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "es",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Compañía de Productos Agrícolas",
+      "field_kind": "account_name",
+      "label": "foreign",
+      "language": "es",
+      "group": "challenge",
+      "prediction": {
+        "language": "es",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "es",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Los Jardines del Sol",
+      "field_kind": "account_name",
+      "label": "foreign",
+      "language": "es",
+      "group": "challenge",
+      "prediction": {
+        "language": "es",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "es",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Soluciones para las Empresas",
+      "field_kind": "account_name",
+      "label": "foreign",
+      "language": "es",
+      "group": "challenge",
+      "prediction": {
+        "language": "es",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "es",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Deutsche Werkstätten für Gesundheit",
+      "field_kind": "account_name",
+      "label": "foreign",
+      "language": "de",
+      "group": "challenge",
+      "prediction": {
+        "language": "de",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "de",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Gesellschaft für Erneuerbare Energien",
+      "field_kind": "account_name",
+      "label": "foreign",
+      "language": "de",
+      "group": "challenge",
+      "prediction": {
+        "language": "de",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "de",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Technische Lösungen für Unternehmen",
+      "field_kind": "account_name",
+      "label": "foreign",
+      "language": "de",
+      "group": "challenge",
+      "prediction": {
+        "language": "de",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "de",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Handel mit Landwirtschaftlichen Produkten",
+      "field_kind": "account_name",
+      "label": "foreign",
+      "language": "de",
+      "group": "challenge",
+      "prediction": {
+        "language": "de",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "de",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Banco Azul",
+      "field_kind": "account_name",
+      "label": "foreign",
+      "language": "es",
+      "group": "challenge",
+      "prediction": {
+        "language": "es",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "es",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Élan",
+      "field_kind": "account_name",
+      "label": "foreign",
+      "language": "fr",
+      "group": "challenge",
+      "prediction": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Uncertain",
+        "detection_outcome": "Unknown/Ambiguous — Manual Language Review",
+        "reason": "Short business name, proper noun or insufficient language evidence; confirm manually.",
+        "detector_language": "fr",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Müller GmbH",
+      "field_kind": "account_name",
+      "label": "foreign",
+      "language": "de",
+      "group": "challenge",
+      "prediction": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Uncertain",
+        "detection_outcome": "Unknown/Ambiguous — Manual Language Review",
+        "reason": "Short business name, proper noun or insufficient language evidence; confirm manually.",
+        "detector_language": "tr",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "North Star Health Services",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "challenge",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "en",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Silver River Data Systems",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "challenge",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "da",
+        "detector_confidence": 0.8263
+      }
+    },
+    {
+      "text": "Cedar Research Holdings",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "challenge",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "en",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Blue Harbor Design Studio",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "challenge",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "da",
+        "detector_confidence": 0.8571
+      }
+    },
+    {
+      "text": "Enterprise Data Services",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "challenge",
+      "prediction": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Uncertain",
+        "detection_outcome": "Unknown/Ambiguous — Manual Language Review",
+        "reason": "Short business name, proper noun or insufficient language evidence; confirm manually.",
+        "detector_language": "it",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Commercial Health Systems",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "challenge",
+      "prediction": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Uncertain",
+        "detection_outcome": "Unknown/Ambiguous — Manual Language Review",
+        "reason": "Short business name, proper noun or insufficient language evidence; confirm manually.",
+        "detector_language": "en",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Healthcare Research Labs",
+      "field_kind": "account_name",
+      "label": "english",
+      "language": "en",
+      "group": "challenge",
+      "prediction": {
+        "language": "en",
+        "confidence": 0.95,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "English phrase/context evidence; business terms alone are insufficient.",
+        "detector_language": "en",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Orion",
+      "field_kind": "account_name",
+      "label": "ambiguous",
+      "language": null,
+      "group": "challenge",
+      "prediction": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Uncertain",
+        "detection_outcome": "Unknown/Ambiguous — Manual Language Review",
+        "reason": "Short business name, proper noun or insufficient language evidence; confirm manually.",
+        "detector_language": "it",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Acme",
+      "field_kind": "account_name",
+      "label": "ambiguous",
+      "language": null,
+      "group": "challenge",
+      "prediction": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Uncertain",
+        "detection_outcome": "Unknown/Ambiguous — Manual Language Review",
+        "reason": "Short business name, proper noun or insufficient language evidence; confirm manually.",
+        "detector_language": "ro",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Nova",
+      "field_kind": "account_name",
+      "label": "ambiguous",
+      "language": null,
+      "group": "challenge",
+      "prediction": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Uncertain",
+        "detection_outcome": "Unknown/Ambiguous — Manual Language Review",
+        "reason": "Short business name, proper noun or insufficient language evidence; confirm manually.",
+        "detector_language": "hr",
+        "detector_confidence": 0.8546
+      }
+    },
+    {
+      "text": "Café International",
+      "field_kind": "account_name",
+      "label": "ambiguous",
+      "language": null,
+      "group": "challenge",
+      "prediction": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Uncertain",
+        "detection_outcome": "Unknown/Ambiguous — Manual Language Review",
+        "reason": "Short business name, proper noun or insufficient language evidence; confirm manually.",
+        "detector_language": "fr",
+        "detector_confidence": 0.5714
+      }
+    },
+    {
+      "text": "Data Studio",
+      "field_kind": "account_name",
+      "label": "ambiguous",
+      "language": null,
+      "group": "challenge",
+      "prediction": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Uncertain",
+        "detection_outcome": "Unknown/Ambiguous — Manual Language Review",
+        "reason": "Short business name, proper noun or insufficient language evidence; confirm manually.",
+        "detector_language": "it",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Commercial",
+      "field_kind": "account_name",
+      "label": "ambiguous",
+      "language": null,
+      "group": "challenge",
+      "prediction": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Uncertain",
+        "detection_outcome": "Unknown/Ambiguous — Manual Language Review",
+        "reason": "Short business name, proper noun or insufficient language evidence; confirm manually.",
+        "detector_language": "it",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Health",
+      "field_kind": "account_name",
+      "label": "ambiguous",
+      "language": null,
+      "group": "challenge",
+      "prediction": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Uncertain",
+        "detection_outcome": "Unknown/Ambiguous — Manual Language Review",
+        "reason": "Short business name, proper noun or insufficient language evidence; confirm manually.",
+        "detector_language": "en",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "IBM",
+      "field_kind": "account_name",
+      "label": "ambiguous",
+      "language": null,
+      "group": "challenge",
+      "prediction": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Not Required",
+        "detection_outcome": "Excluded field — Translation Disabled",
+        "reason": "Identifier or code.",
+        "detector_language": "und",
+        "detector_confidence": 0.0
+      }
+    },
+    {
+      "text": "We provide financial services for businesses across the country.",
+      "field_kind": "description",
+      "label": "english",
+      "language": "en",
+      "group": "challenge",
+      "prediction": {
+        "language": "en",
+        "confidence": 1.0,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "Sufficient prose context for language detection.",
+        "detector_language": "en",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Nous proposons des services de santé pour toutes les familles.",
+      "field_kind": "description",
+      "label": "foreign",
+      "language": "fr",
+      "group": "challenge",
+      "prediction": {
+        "language": "fr",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "fr",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Ofrecemos servicios financieros para las pequeñas empresas.",
+      "field_kind": "description",
+      "label": "foreign",
+      "language": "es",
+      "group": "challenge",
+      "prediction": {
+        "language": "es",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "es",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Wir entwickeln technische Lösungen für kleine Unternehmen.",
+      "field_kind": "description",
+      "label": "foreign",
+      "language": "de",
+      "group": "challenge",
+      "prediction": {
+        "language": "de",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "de",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Please contact our team for support with your account.",
+      "field_kind": "free_text",
+      "label": "english",
+      "language": "en",
+      "group": "challenge",
+      "prediction": {
+        "language": "en",
+        "confidence": 1.0,
+        "status": "Not Required",
+        "detection_outcome": "Confident English — No Translation Needed",
+        "reason": "Sufficient prose context for language detection.",
+        "detector_language": "en",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "Veuillez contacter notre équipe pour obtenir des informations.",
+      "field_kind": "free_text",
+      "label": "foreign",
+      "language": "fr",
+      "group": "challenge",
+      "prediction": {
+        "language": "fr",
+        "confidence": 1.0,
+        "status": "Translation Needed",
+        "detection_outcome": "Confident Non-English — Translation Candidate",
+        "reason": "Detector agrees with multiple language cues.",
+        "detector_language": "fr",
+        "detector_confidence": 1.0
+      }
+    },
+    {
+      "text": "SMB",
+      "field_kind": "classification",
+      "label": "excluded",
+      "language": "en",
+      "group": "challenge",
+      "prediction": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Excluded",
+        "detection_outcome": "Excluded field — Translation Disabled",
+        "reason": "Field excluded from translation; enable classification fields explicitly if needed.",
+        "detector_language": "und",
+        "detector_confidence": 0.0
+      }
+    },
+    {
+      "text": "Verify",
+      "field_kind": "classification",
+      "label": "excluded",
+      "language": "en",
+      "group": "challenge",
+      "prediction": {
+        "language": "und",
+        "confidence": 0.0,
+        "status": "Excluded",
+        "detection_outcome": "Excluded field — Translation Disabled",
+        "reason": "Field excluded from translation; enable classification fields explicitly if needed.",
+        "detector_language": "und",
+        "detector_confidence": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,2407 @@
+[
+  {
+    "text": "HARBOR HEALTH",
+    "expected_language": "en",
+    "expected_outcome": "english",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "en",
+      "confidence": 0.9660536646842957,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "Cedar Labs",
+    "expected_language": "en",
+    "expected_outcome": "english",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "en",
+      "confidence": 0.547145664691925,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "Summit Holdings",
+    "expected_language": "en",
+    "expected_outcome": "english",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "en",
+      "confidence": 0.9284358620643616,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "Pioneer Data",
+    "expected_language": "en",
+    "expected_outcome": "english",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "en",
+      "confidence": 0.43717631697654724,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "Orchard Systems",
+    "expected_language": "en",
+    "expected_outcome": "english",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "en",
+      "confidence": 1.0,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "Bluebird Studio",
+    "expected_language": "en",
+    "expected_outcome": "english",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "en",
+      "confidence": 0.9261302947998047,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "Boulangerie du Soleil",
+    "expected_language": "fr",
+    "expected_outcome": "foreign",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "fr",
+      "confidence": 0.7809188961982727,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "Les Jardins de Provence",
+    "expected_language": "fr",
+    "expected_outcome": "foreign",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "fr",
+      "confidence": 1.0,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "Société des Transports",
+    "expected_language": "fr",
+    "expected_outcome": "foreign",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "fr",
+      "confidence": 0.9898074865341187,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "Panadería La Esperanza",
+    "expected_language": "es",
+    "expected_outcome": "foreign",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "es",
+      "confidence": 1.0,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "Servicios de Construcción",
+    "expected_language": "es",
+    "expected_outcome": "foreign",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "es",
+      "confidence": 1.0,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "Distribuidora El Sol",
+    "expected_language": "es",
+    "expected_outcome": "foreign",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "es",
+      "confidence": 1.0,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "Deutsche Maschinenfabrik",
+    "expected_language": "de",
+    "expected_outcome": "foreign",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "de",
+      "confidence": 0.9855693578720093,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "Bäckerei am Markt",
+    "expected_language": "de",
+    "expected_outcome": "foreign",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "de",
+      "confidence": 0.9583151936531067,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "Haus der Technik",
+    "expected_language": "de",
+    "expected_outcome": "foreign",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "de",
+      "confidence": 0.8993325233459473,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "Tecnologia e Soluções",
+    "expected_language": "pt",
+    "expected_outcome": "foreign",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "pt",
+      "confidence": 0.9894593954086304,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "Comércio de Alimentos",
+    "expected_language": "pt",
+    "expected_outcome": "foreign",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "pt",
+      "confidence": 0.926469624042511,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "Azienda Agricola Toscana",
+    "expected_language": "it",
+    "expected_outcome": "foreign",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "it",
+      "confidence": 0.9879668354988098,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "Forno della Famiglia",
+    "expected_language": "it",
+    "expected_outcome": "foreign",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "it",
+      "confidence": 1.0,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "株式会社さくら商事",
+    "expected_language": "ja",
+    "expected_outcome": "foreign",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "ja",
+      "confidence": 1.0,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "北京科技有限公司",
+    "expected_language": "zh",
+    "expected_outcome": "foreign",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "zh-CN",
+      "confidence": 1.0,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "شركة النور للتجارة",
+    "expected_language": "ar",
+    "expected_outcome": "foreign",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "ar",
+      "confidence": 0.9770841598510742,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "Müller GmbH",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "de",
+      "confidence": 0.5003052949905396,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "Élan",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "fr",
+      "confidence": 0.5652173757553101,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "Global Tech Solutions",
+    "expected_language": "en",
+    "expected_outcome": "english",
+    "label_basis": "User-provided expected language from approved 25-name dataset; ambiguity explicitly retained.",
+    "response_origin": "saved_live_google",
+    "raw": {
+      "provider": "google",
+      "policy": "google-v3-field-aware-v1",
+      "language_code": "en",
+      "confidence": 0.965993344783783,
+      "alternatives": []
+    },
+    "tags": [
+      "saved_25"
+    ]
+  },
+  {
+    "text": "Harbor Coastal Research LLC",
+    "expected_language": "en",
+    "expected_outcome": "english",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.99,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary",
+      "deliberate_mock_error_or_competition"
+    ]
+  },
+  {
+    "text": "Silver Meadow Engineering",
+    "expected_language": "en",
+    "expected_outcome": "english",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.96,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Northern Valley Logistics",
+    "expected_language": "en",
+    "expected_outcome": "english",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.92,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Bright River Medical Supplies",
+    "expected_language": "en",
+    "expected_outcome": "english",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.9,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Oak Forest Financial Services",
+    "expected_language": "en",
+    "expected_outcome": "english",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.899,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Blue Coast Energy Systems",
+    "expected_language": "en",
+    "expected_outcome": "english",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.87,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Golden Field Agricultural Products",
+    "expected_language": "en",
+    "expected_outcome": "english",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.84,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Westbridge Industrial Equipment",
+    "expected_language": "en",
+    "expected_outcome": "english",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "de",
+      "confidence": 0.79,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary",
+      "deliberate_mock_error_or_competition"
+    ]
+  },
+  {
+    "text": "Cedar Grove Digital Services",
+    "expected_language": "en",
+    "expected_outcome": "english",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.94,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Orchard Scientific Instruments",
+    "expected_language": "en",
+    "expected_outcome": "english",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Lighthouse Community Healthcare",
+    "expected_language": "en",
+    "expected_outcome": "english",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.93,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Pioneer Coastal Data Solutions",
+    "expected_language": "en",
+    "expected_outcome": "english",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.91,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Summit International Freight",
+    "expected_language": "en",
+    "expected_outcome": "english",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.98,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Bluebird Creative Design Studio",
+    "expected_language": "en",
+    "expected_outcome": "english",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.88,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Green Valley Business Services",
+    "expected_language": "en",
+    "expected_outcome": "english",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.95,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Moonlit Harbor Technology Group",
+    "expected_language": "en",
+    "expected_outcome": "english",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "fr",
+      "confidence": 0.86,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary",
+      "deliberate_mock_error_or_competition"
+    ]
+  },
+  {
+    "text": "Les Ateliers du Rivage SAS",
+    "expected_language": "fr",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "fr",
+      "confidence": 0.99,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Société des Services Portuaires",
+    "expected_language": "fr",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.96,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary",
+      "deliberate_mock_error_or_competition"
+    ]
+  },
+  {
+    "text": "Boulangerie des Trois Rivières",
+    "expected_language": "fr",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "fr",
+      "confidence": 0.92,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Les Jardins du Lac Bleu",
+    "expected_language": "fr",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "fr",
+      "confidence": 0.9,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Compagnie des Énergies Renouvelables",
+    "expected_language": "fr",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "fr",
+      "confidence": 0.899,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Maison de la Santé Familiale",
+    "expected_language": "fr",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "fr",
+      "confidence": 0.87,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Éditions de la Forêt Verte",
+    "expected_language": "fr",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "fr",
+      "confidence": 0.84,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Les Artisans du Vieux Moulin",
+    "expected_language": "fr",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "es",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary",
+      "deliberate_mock_error_or_competition"
+    ]
+  },
+  {
+    "text": "Transport des Marchandises du Nord",
+    "expected_language": "fr",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "fr",
+      "confidence": 0.94,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Fabrique de Produits Laitiers",
+    "expected_language": "fr",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "fr",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Atelier Lumière",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brief name/shared vocabulary or Han-only brand: intended language is not definitive without context.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "fr",
+      "confidence": 0.93,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary",
+      "explicitly_uncertain_short_name"
+    ]
+  },
+  {
+    "text": "Banque des Petites Entreprises",
+    "expected_language": "fr",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "fr",
+      "confidence": 0.91,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Servicios de Ingeniería Rivera SA",
+    "expected_language": "es",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "es",
+      "confidence": 0.99,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Compañía de Energía Renovable",
+    "expected_language": "es",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "es",
+      "confidence": 0.96,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Panadería del Valle Verde",
+    "expected_language": "es",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "es",
+      "confidence": 0.92,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Distribuidora de Productos Agrícolas",
+    "expected_language": "es",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "es",
+      "confidence": 0.9,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Soluciones de Salud Comunitaria",
+    "expected_language": "es",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "es",
+      "confidence": 0.899,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Talleres del Puerto Azul",
+    "expected_language": "es",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "es",
+      "confidence": 0.97,
+      "alternatives": [
+        {
+          "language_code": "pt",
+          "confidence": 0.85
+        }
+      ]
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary",
+      "deliberate_mock_error_or_competition"
+    ]
+  },
+  {
+    "text": "Jardines de la Sierra Dorada",
+    "expected_language": "es",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "es",
+      "confidence": 0.84,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Fábrica de Materiales Sostenibles",
+    "expected_language": "es",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "es",
+      "confidence": 0.79,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Transportes de la Costa Norte",
+    "expected_language": "es",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "es",
+      "confidence": 0.94,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Servicios de Investigación Médica",
+    "expected_language": "es",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "es",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Taller Azul",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brief name/shared vocabulary or Han-only brand: intended language is not definitive without context.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "es",
+      "confidence": 0.93,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary",
+      "explicitly_uncertain_short_name"
+    ]
+  },
+  {
+    "text": "Comercio de Alimentos Frescos",
+    "expected_language": "es",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "es",
+      "confidence": 0.91,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Deutsche Werkstätten am Fluss GmbH",
+    "expected_language": "de",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "de",
+      "confidence": 0.99,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Bäckerei Sonnental",
+    "expected_language": "de",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.96,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary",
+      "deliberate_mock_error_or_competition"
+    ]
+  },
+  {
+    "text": "Gesellschaft für Erneuerbare Energien",
+    "expected_language": "de",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "de",
+      "confidence": 0.92,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Werkstatt für Medizinische Geräte",
+    "expected_language": "de",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "de",
+      "confidence": 0.9,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Gärten am Silbernen See",
+    "expected_language": "de",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "de",
+      "confidence": 0.899,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Handel mit Landwirtschaftlichen Produkten",
+    "expected_language": "de",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "de",
+      "confidence": 0.87,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Institut für Technische Forschung",
+    "expected_language": "de",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "de",
+      "confidence": 0.84,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Hersteller von Nachhaltigen Baustoffen",
+    "expected_language": "de",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "de",
+      "confidence": 0.79,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Dienstleistungen für Kleine Unternehmen",
+    "expected_language": "de",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "de",
+      "confidence": 0.94,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Transport und Lagerung Nordhafen",
+    "expected_language": "de",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "de",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Blumen Wiese",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brief name/shared vocabulary or Han-only brand: intended language is not definitive without context.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "de",
+      "confidence": 0.93,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary",
+      "explicitly_uncertain_short_name"
+    ]
+  },
+  {
+    "text": "Bäckerei am Alten Rathaus",
+    "expected_language": "de",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "de",
+      "confidence": 0.91,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Empresa de Energia Renovável Ltd",
+    "expected_language": "pt",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "pt",
+      "confidence": 0.99,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Comércio de Produtos Florestais",
+    "expected_language": "pt",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.87,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary",
+      "deliberate_mock_error_or_competition"
+    ]
+  },
+  {
+    "text": "Padaria do Vale Verde",
+    "expected_language": "pt",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "pt",
+      "confidence": 0.92,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Serviços de Saúde Comunitária",
+    "expected_language": "pt",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "pt",
+      "confidence": 0.9,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Distribuidora de Alimentos Frescos",
+    "expected_language": "pt",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "pt",
+      "confidence": 0.899,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Oficina de Equipamentos Médicos",
+    "expected_language": "pt",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "pt",
+      "confidence": 0.87,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Jardins da Serra Dourada",
+    "expected_language": "pt",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "pt",
+      "confidence": 0.84,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Fábrica de Materiais Sustentáveis",
+    "expected_language": "pt",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "pt",
+      "confidence": 0.79,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Transportes da Costa Norte",
+    "expected_language": "pt",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "pt",
+      "confidence": 0.94,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Sociedade de Investigação Científica",
+    "expected_language": "pt",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "pt",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Padaria Sol",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brief name/shared vocabulary or Han-only brand: intended language is not definitive without context.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "pt",
+      "confidence": 0.93,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary",
+      "explicitly_uncertain_short_name"
+    ]
+  },
+  {
+    "text": "Soluções para Pequenas Empresas",
+    "expected_language": "pt",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "pt",
+      "confidence": 0.91,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "شركة الحدائق الخضراء للتجارة",
+    "expected_language": "ar",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ar",
+      "confidence": 0.99,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "مؤسسة النور للخدمات الطبية",
+    "expected_language": "ar",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ar",
+      "confidence": 0.96,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "شركة الطاقة المتجددة العربية",
+    "expected_language": "ar",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ar",
+      "confidence": 0.92,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "مصنع المواد الغذائية الطازجة",
+    "expected_language": "ar",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ar",
+      "confidence": 0.9,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "خدمات النقل والتخزين الحديثة",
+    "expected_language": "ar",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.96,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary",
+      "deliberate_mock_error_or_competition"
+    ]
+  },
+  {
+    "text": "شركة البحوث العلمية المتقدمة",
+    "expected_language": "ar",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ar",
+      "confidence": 0.87,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "مؤسسة المعدات الصناعية الحديثة",
+    "expected_language": "ar",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ar",
+      "confidence": 0.84,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "مخبز الوادي الأخضر",
+    "expected_language": "ar",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ar",
+      "confidence": 0.79,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "شركة الحلول التقنية المتكاملة",
+    "expected_language": "ar",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ar",
+      "confidence": 0.94,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "مركز الرعاية الصحية المجتمعية",
+    "expected_language": "ar",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ar",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "الحدائق الخضراء",
+    "expected_language": "ar",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ar",
+      "confidence": 0.93,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "شركة المنتجات الزراعية المستدامة",
+    "expected_language": "ar",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ar",
+      "confidence": 0.91,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "青山绿色能源科技有限公司",
+    "expected_language": "zh",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "zh",
+      "confidence": 0.99,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "晨光医疗设备有限公司",
+    "expected_language": "zh",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "zh",
+      "confidence": 0.96,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "海湾食品贸易有限公司",
+    "expected_language": "zh",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "zh",
+      "confidence": 0.92,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "长河物流运输有限公司",
+    "expected_language": "zh",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.96,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary",
+      "deliberate_mock_error_or_competition"
+    ]
+  },
+  {
+    "text": "春雨农业技术有限公司",
+    "expected_language": "zh",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "zh",
+      "confidence": 0.899,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "蓝天环保材料有限公司",
+    "expected_language": "zh",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "zh",
+      "confidence": 0.87,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "明月科学仪器有限公司",
+    "expected_language": "zh",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "zh",
+      "confidence": 0.84,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "绿洲社区健康服务中心",
+    "expected_language": "zh",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "zh",
+      "confidence": 0.79,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "金桥工业设备有限公司",
+    "expected_language": "zh",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "zh",
+      "confidence": 0.94,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "白云信息技术有限公司",
+    "expected_language": "zh",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "zh",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "星河科技",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brief name/shared vocabulary or Han-only brand: intended language is not definitive without context.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "zh",
+      "confidence": 0.93,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary",
+      "explicitly_uncertain_short_name"
+    ]
+  },
+  {
+    "text": "东方可再生能源研究所",
+    "expected_language": "zh",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "zh",
+      "confidence": 0.91,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "株式会社青空物流",
+    "expected_language": "ja",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ja",
+      "confidence": 0.99,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "株式会社緑の森食品",
+    "expected_language": "ja",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ja",
+      "confidence": 0.96,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "さくら医療機器株式会社",
+    "expected_language": "ja",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ja",
+      "confidence": 0.92,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "株式会社未来環境技術",
+    "expected_language": "ja",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ja",
+      "confidence": 0.9,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "ひかり地域健康サービス",
+    "expected_language": "ja",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ja",
+      "confidence": 0.899,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "株式会社朝日農業研究",
+    "expected_language": "ja",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ja",
+      "confidence": 0.87,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "株式会社海辺のパン工房",
+    "expected_language": "ja",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ja",
+      "confidence": 0.84,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "みどり再生可能エネルギー株式会社",
+    "expected_language": "ja",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ja",
+      "confidence": 0.79,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "株式会社星空科学機器",
+    "expected_language": "ja",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ja",
+      "confidence": 0.94,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "株式会社川辺の建築材料",
+    "expected_language": "ja",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ja",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "さくら商事",
+    "expected_language": "ja",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ja",
+      "confidence": 0.93,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "株式会社未来情報システム",
+    "expected_language": "ja",
+    "expected_outcome": "foreign",
+    "label_basis": "Author-labelled language of descriptive wording/script; fictional name, not entity nationality.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ja",
+      "confidence": 0.91,
+      "alternatives": []
+    },
+    "tags": [
+      "descriptive",
+      "confidence_boundary"
+    ]
+  },
+  {
+    "text": "Google",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brand/proper noun: country of origin does not determine the language of an account name.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "international_brand_or_ambiguous"
+    ]
+  },
+  {
+    "text": "Microsoft",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brand/proper noun: country of origin does not determine the language of an account name.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "international_brand_or_ambiguous"
+    ]
+  },
+  {
+    "text": "Apple",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brand/proper noun: country of origin does not determine the language of an account name.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "international_brand_or_ambiguous"
+    ]
+  },
+  {
+    "text": "Amazon",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brand/proper noun: country of origin does not determine the language of an account name.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "international_brand_or_ambiguous"
+    ]
+  },
+  {
+    "text": "Meta",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brand/proper noun: country of origin does not determine the language of an account name.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "international_brand_or_ambiguous"
+    ]
+  },
+  {
+    "text": "Uber",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brand/proper noun: country of origin does not determine the language of an account name.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "international_brand_or_ambiguous"
+    ]
+  },
+  {
+    "text": "Toyota",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brand/proper noun: country of origin does not determine the language of an account name.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ja",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "international_brand_or_ambiguous"
+    ]
+  },
+  {
+    "text": "Sony",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brand/proper noun: country of origin does not determine the language of an account name.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "ja",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "international_brand_or_ambiguous"
+    ]
+  },
+  {
+    "text": "Samsung",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brand/proper noun: country of origin does not determine the language of an account name.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "international_brand_or_ambiguous"
+    ]
+  },
+  {
+    "text": "IKEA",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brand/proper noun: country of origin does not determine the language of an account name.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "international_brand_or_ambiguous"
+    ]
+  },
+  {
+    "text": "Siemens",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brand/proper noun: country of origin does not determine the language of an account name.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "international_brand_or_ambiguous"
+    ]
+  },
+  {
+    "text": "Nestlé",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brand/proper noun: country of origin does not determine the language of an account name.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "fr",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "international_brand_or_ambiguous"
+    ]
+  },
+  {
+    "text": "L’Oréal",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brand/proper noun: country of origin does not determine the language of an account name.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "fr",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "international_brand_or_ambiguous"
+    ]
+  },
+  {
+    "text": "Alibaba",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brand/proper noun: country of origin does not determine the language of an account name.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "international_brand_or_ambiguous"
+    ]
+  },
+  {
+    "text": "Huawei",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brand/proper noun: country of origin does not determine the language of an account name.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "international_brand_or_ambiguous"
+    ]
+  },
+  {
+    "text": "Toyota Motor Corporation",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brand/proper noun: country of origin does not determine the language of an account name.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "international_brand_or_ambiguous"
+    ]
+  },
+  {
+    "text": "Samsung Electronics Ltd",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brand/proper noun: country of origin does not determine the language of an account name.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "international_brand_or_ambiguous"
+    ]
+  },
+  {
+    "text": "Nova",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brand/proper noun: country of origin does not determine the language of an account name.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "international_brand_or_ambiguous"
+    ]
+  },
+  {
+    "text": "Orion",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brand/proper noun: country of origin does not determine the language of an account name.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "international_brand_or_ambiguous"
+    ]
+  },
+  {
+    "text": "Data Studio",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Brand/proper noun: country of origin does not determine the language of an account name.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.97,
+      "alternatives": []
+    },
+    "tags": [
+      "international_brand_or_ambiguous"
+    ]
+  },
+  {
+    "text": "شركة Sunrise للتجارة",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Mixed-script/language or shared vocabulary; no single definitive language assigned.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.96,
+      "alternatives": []
+    },
+    "tags": [
+      "mixed_or_conflicting"
+    ]
+  },
+  {
+    "text": "青山 Global Services",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Mixed-script/language or shared vocabulary; no single definitive language assigned.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.96,
+      "alternatives": []
+    },
+    "tags": [
+      "mixed_or_conflicting"
+    ]
+  },
+  {
+    "text": "東京 Digital Labs",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Mixed-script/language or shared vocabulary; no single definitive language assigned.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.96,
+      "alternatives": []
+    },
+    "tags": [
+      "mixed_or_conflicting"
+    ]
+  },
+  {
+    "text": "Atelier Casa Verde",
+    "expected_language": null,
+    "expected_outcome": "manual",
+    "label_basis": "Mixed-script/language or shared vocabulary; no single definitive language assigned.",
+    "response_origin": "synthetic",
+    "raw": {
+      "language_code": "en",
+      "confidence": 0.96,
+      "alternatives": []
+    },
+    "tags": [
+      "mixed_or_conflicting"
+    ]
+  }
+]
