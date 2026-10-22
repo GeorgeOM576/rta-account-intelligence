@@ -8,3 +8,4 @@ langdetect==1.0.9
 pytest>=8.3,<10
 google-cloud-translate>=3.28,<4
 pandas>=2.2,<4
+google-auth>=2.30,<3

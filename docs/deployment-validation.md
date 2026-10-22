@@ -1,5 +1,7 @@
 # Deployment validation and security audit results
 
+Subsequent update: the hosted Google credential adapter has now been implemented; see [Google authentication](google-cloud-authentication.md). The results below record the earlier deployment-preparation audit; its Google-auth blocker is superseded. SQLite persistence and key-rotation findings remain applicable.
+
 Date: 2026-10-22 (America/Toronto). No deployment, push, commit, provider API calls, database resets or workspace-record changes were performed.
 
 ## Result

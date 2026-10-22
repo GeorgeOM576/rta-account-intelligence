@@ -102,7 +102,7 @@ class OpenAIProvider:
 
 
 class GoogleTranslationProvider:
-    """v3 NMT via ADC. Construction and estimates never resolve credentials or call APIs."""
+    """v3 NMT via Streamlit service-account secrets or local ADC. Construction and estimates never resolve credentials or call APIs."""
     name = 'Google Cloud Translation Advanced v3'
     rate_per_million = RATE_PER_MILLION
     max_attempts = 3
@@ -139,13 +139,11 @@ class GoogleTranslationProvider:
         try:
             from google.api_core.exceptions import ServiceUnavailable, TooManyRequests
             if self.client is None:
-                from google.cloud import translate_v3
-                from google.api_core.client_options import ClientOptions
-                self.client = translate_v3.TranslationServiceClient(
-                    client_options=ClientOptions(quota_project_id=self.project))
+                from .google_auth import translation_client
+                self.client = translation_client()
         except Exception as error:
             event('google_setup_failed', error_code=error_code(error))
-            raise ValueError('Google translation setup unavailable. Check installed dependencies, ADC and IAM permissions.') from None
+            raise ValueError('Google translation setup unavailable. Check Streamlit [gcp_service_account] secrets or local ADC, dependencies and IAM permissions.') from None
         batches, batch, size, language = [], [], 0, None
         for text, code in sorted(set(identities), key=lambda pair: (pair[1], pair[0])):
             if not text.strip() or code in ('en', 'und') or len(text) > 30000:

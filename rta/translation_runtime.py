@@ -7,7 +7,7 @@ import sys
 def stale_translation_modules():
     stale = []
     for name in ('translation', 'translation_ui', 'translation_workspace', 'translation_providers',
-                 'translation_diagnostics', 'export', 'google_detection', 'google_languages'):
+                 'translation_diagnostics', 'export', 'google_detection', 'google_languages', 'google_auth'):
         module = sys.modules.get(f'rta.{name}')
         if module is None:
             continue

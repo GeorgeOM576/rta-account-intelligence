@@ -10,7 +10,7 @@ The original `.streamlit/secrets.toml.example` contained real-looking OpenAI and
 
 **Community Cloud is not ready for durable production RTA use without further work:**
 
-1. The existing Google providers use ADC only. There is no adapter from a `[gcp_service_account]` TOML section to Google credentials. Local Mac ADC is not transferred to Cloud. Google authentication must be provisioned separately as described below.
+1. Google providers now support `[gcp_service_account]` Streamlit Secrets, with local ADC fallback when the section is absent. See [Google authentication setup](google-cloud-authentication.md). Actual hosted IAM/billing remains an operator validation step; no live API calls were made during implementation.
 2. SQLite lives on the local filesystem. Community Cloud runtime-generated files are not guaranteed to persist; consequently this storage must be treated as ephemeral. Durable production workspace storage needs an external database or a host with managed persistent storage. This preparation does not migrate the storage engine. [Streamlit file persistence caveat](https://docs.streamlit.io/develop/concepts/configuration/serving-static-files)
 3. Credential rotation is an operator action still required. If an existing GitHub repository/history exists elsewhere, it needs a redacted secret/customer-data history audit before reuse.
 
@@ -73,15 +73,11 @@ RTA_TRANSLATION_DIAGNOSTICS = "0"
 
 The repository's `.streamlit/secrets.toml.example` contains empty values only. Do not paste a private workspace resume token into Cloud secrets or a source file.
 
-### Google Cloud authentication: unresolved Community Cloud integration
+### Google Cloud authentication
 
-Cloud Translation Advanced v3 uses ADC/IAM, **not a Google API key**. Project and quota project are `rta-translation`; the API and billing must be enabled. The identity needs suitable translation permissions, such as Cloud Translation API User (`roles/cloudtranslate.user`), and Service Usage Consumer where required for quota-project use. [Google Translation authentication](https://docs.cloud.google.com/translate/docs/authentication), [IAM roles](https://docs.cloud.google.com/translate/docs/api-overview)
+Both detection and translation use `rta/google_auth.py`. On Community Cloud, the factory converts `st.secrets["gcp_service_account"]` using `google.oauth2.service_account.Credentials.from_service_account_info()` and supplies those credentials to the v3 client. When the section is absent, Google resolves local ADC as before. Invalid configured credentials stop the action rather than silently selecting another identity.
 
-ADC can discover a securely mounted credential configuration file via `GOOGLE_APPLICATION_CREDENTIALS`, local developer ADC, or an attached service account on a suitable host. Google recommends workload identity federation for supported external-cloud environments. [ADC discovery](https://docs.cloud.google.com/docs/authentication/application-default-credentials)
-
-For **this unmodified app on Community Cloud**, pasting service-account fields under `[gcp_service_account]` is insufficient: the providers never read that section, and Cloud secrets do not automatically materialize an ADC JSON file. Likewise, setting `GOOGLE_APPLICATION_CREDENTIALS` to a Mac path or a nonexistent Cloud path cannot authenticate. Do not commit a service-account key or copy personal developer ADC into GitHub.
-
-Before enabling Google on Community Cloud, separately implement/review a narrowly scoped secrets-to-credentials adapter, or arrange a supported secure runtime credential mount/workload-identity environment. Store any approved service-account fields only in Cloud's Secrets UI, never in the repository, and ensure the adapter explicitly consumes them without logging/exporting them. An ADC-native hosting platform is another option. No such adapter was added here because this task prohibits application-functionality changes. Google live access remains unverified; no paid calls were made.
+Project and quota project remain `rta-translation`. Follow [the authentication guide](google-cloud-authentication.md) for the supported TOML format, IAM prerequisites, error handling and mocked verification. Do not commit service-account JSON or copy personal developer ADC into GitHub. This adapter keeps credentials in memory and creates no credential files.
 
 ## Ephemeral storage impact
 

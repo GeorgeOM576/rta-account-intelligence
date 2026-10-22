@@ -157,12 +157,10 @@ class GoogleDetectionProvider:
             raise ValueError('Detection input must contain 1–30,000 characters.')
         if self.client is None:
             try:
-                from google.cloud import translate_v3
-                from google.api_core.client_options import ClientOptions
-                self.client = translate_v3.TranslationServiceClient(
-                    client_options=ClientOptions(quota_project_id='rta-translation'))
+                from .google_auth import translation_client
+                self.client = translation_client()
             except Exception:
-                raise ValueError('Google detection setup unavailable. Check ADC, dependencies, project and IAM permissions.') from None
+                raise ValueError('Google detection setup unavailable. Check Streamlit [gcp_service_account] secrets or local ADC, dependencies, project and IAM permissions.') from None
         try:
             request_id = self.usage.start_request(len(text), operation='detection') if self.usage else None
         except Exception:
