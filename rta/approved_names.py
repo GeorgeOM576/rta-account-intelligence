@@ -41,7 +41,7 @@ class ApprovedNames:
 
     def matching_signature(self):
         """Only matching inputs invalidate a run; draft/review-only edits do not."""
-        return digest({'version': 1, 'revisions': self.revisions, 'mapping': vars(self.mapping),
+        return digest({'version': 2, 'revisions': self.revisions, 'mapping': vars(self.mapping),
                        'approved': sorted([list(key) + [entry['english']]
                                            for key, entry in self.approved.items()])})
 
@@ -67,7 +67,7 @@ class ApprovedNames:
             if not hits:
                 hits = [c for c in result.candidates if c.get('account') == result.recommended_source_account]
             return self._source(hits[0]) if len(hits) == 1 else {}
-        if result.match_status in ('Exact', 'Normalized', 'Alias', 'Relationship', 'Translation-assisted') and result.candidates:
+        if result.match_status in ('Exact', 'Normalized', 'Alias', 'Relationship', 'Company suffix', 'Name equivalent', 'Translation-assisted') and result.candidates:
             return self._source(result.candidates[0])
         return {}
 

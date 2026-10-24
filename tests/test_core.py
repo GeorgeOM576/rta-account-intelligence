@@ -39,7 +39,7 @@ def test_normalized():
 
 
 def test_fuzzy_never_approves():
-    results, _ = run(['Bluebird Studio'], ['SMB'], ['Bluebird Studios'], ['SMB'])
+    results, _ = run(['Bluebyrd Studio'], ['SMB'], ['Bluebird Studios'], ['SMB'])
     assert results[0].candidates[0]['similarity'] > 80
     assert results[0].match_status == 'Fuzzy candidates'
     assert results[0].final == ''

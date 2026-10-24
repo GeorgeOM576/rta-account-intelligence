@@ -206,7 +206,7 @@ def test_research_gets_both_names_but_translation_is_not_identity_proof(tmp_path
     assert prompt['account_context']['master']['fields']['Country'] == 'FR'
     assert prompt['account_context']['sources'][0]['fields']['Country'] == 'US'
     assert result.recommendation_status == 'Insufficient Evidence'
-    assert not result.proposed and not result.final
+    assert result.proposed == result.local_proposed == 'SMB' and not result.ai_proposed and not result.final
     assert len(transport.calls) == 2  # one search and one AI call, unchanged budget
     # Revocation/correction changes the current context, never reuses this cache key.
     payload = case[0].load(case[1])

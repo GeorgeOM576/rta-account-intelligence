@@ -153,7 +153,8 @@ class Researcher:
             result.research_snapshot, result.researched_at = snapshot, snapshot['timestamp']
             result.research_status = 'Failed'
             result.explanation = 'Research could not be completed. Check credentials, connectivity, or provider limits.'
-            result.ai_proposed = result.proposed = ''
+            result.ai_proposed = ''
+            result.proposed = result.local_proposed
             result.recommendation_status = ''
             result.recommended_source_account = ''
             result.ai_confidence = result.parent_company = result.recommendation_reasoning = ''
@@ -214,7 +215,8 @@ class Researcher:
         result.mapping_policy = self.settings.relationship_policy
         result.evidence, result.parent_company = outcome['evidence'], outcome['parent_company']
         result.ai_confidence, result.recommendation_reasoning = outcome['confidence'], outcome['reasoning']
-        result.ai_proposed = result.proposed = outcome['proposed']
+        result.ai_proposed = outcome['proposed']
+        result.proposed = outcome['proposed'] or result.local_proposed
         result.recommended_source_account, result.recommendation_status = outcome['account'], outcome['recommendation_status']
         result.research_status = 'Completed' if outcome['recommendation_status'] == 'Proposed' else 'Insufficient Evidence'
         result.notes = AI_PENDING if result.ai_proposed else INSUFFICIENT

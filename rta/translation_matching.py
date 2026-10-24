@@ -2,8 +2,9 @@
 from collections import defaultdict
 from rapidfuzz import fuzz
 
-from .matching import Matcher, CONFLICT_NOTE
+from .matching import Matcher, CONFLICT_NOTE, assess_local
 from .models import normalize, valid
+from .name_normalization import name_keys, equivalence_method
 from .approved_names import ApprovedNames
 import polars as pl
 
@@ -34,6 +35,7 @@ def reconcile(master, source, mapping, records=(), *, aliases=None, relationship
                 for a, x in left for b, y in right]
     originals, translated = defaultdict(list), defaultdict(list)
     master_keys = defaultdict(set)
+    master_variant_keys = defaultdict(set)
     for i, row in enumerate(engine.rows):
         key = normalize(names.account('source', i)['original_name'])
         if key:
@@ -45,6 +47,8 @@ def reconcile(master, source, mapping, records=(), *, aliases=None, relationship
         for text in [names.account('master', i)['original_name'], approved.get(('master', i, names.fields['master']), {}).get('english')]:
             if normalize(text):
                 master_keys[normalize(text)].add(i)
+                for _, equivalent in name_keys(text):
+                    master_variant_keys[equivalent].add(i)
     # Reuse the existing blocked fuzzy index for original and approved variants.
     supplementary = any(f == names.fields[d] for d, i, f in approved) or any(
         names.fields[d] != getattr(mapping, f'{d}_id') for d in ('master', 'source'))
@@ -53,12 +57,14 @@ def reconcile(master, source, mapping, records=(), *, aliases=None, relationship
         for label, text, entry in names.variants('source', i):
             variant_rows.append({mapping.source_id: text, mapping.source_value: source_rows[i][mapping.source_value]})
             variant_refs.append((i, label, text, entry))
-    variant_engine = Matcher(pl.DataFrame(variant_rows), mapping) if variant_rows else None
+    variant_engine = Matcher(pl.DataFrame(variant_rows), mapping, company_names=True) if variant_rows else None
     for result, row in zip(results, master_rows):
-        result.match_method = result.match_status
+        result.match_method = result.match_method or result.match_status
         result.match_basis = ('Master Identifier ↔ Source Identifier' if any(
             names.fields[d] != getattr(mapping, f'{d}_id') for d in ('master', 'source')) else
             'Master Original ↔ Source Original')
+        if result.match_method == 'Transliteration candidates':
+            result.match_basis = 'Master Cyrillic romanization ↔ Source Original — ranking only'
         if not result.candidates:
             result.match_basis = ''
         for candidate in result.candidates:
@@ -66,7 +72,7 @@ def reconcile(master, source, mapping, records=(), *, aliases=None, relationship
         result.match_score = (100.0 if result.match_status in ('Exact', 'Normalized') else
                               result.candidates[0]['similarity'] if result.candidates else None)
         # Original rules, including duplicate conflicts, always retain precedence.
-        if result.match_status not in ('Fuzzy candidates', 'Unresolved'):
+        if result.match_status not in ('Fuzzy candidates', 'Unresolved', 'Name equivalent', 'Company suffix'):
             if result.candidates and result.match_status != 'Missing identifier':
                 result.translation_provenance = [{'direction': 'Original Master → Original Source',
                     'master_field': mapping.master_id, 'source_field': mapping.source_id, 'translations': [],
@@ -98,6 +104,37 @@ def reconcile(master, source, mapping, records=(), *, aliases=None, relationship
                 provenance.append({'direction': direction, 'master_field': names.fields['master'],
                     'source_field': names.fields['source'], 'source_row': source_row, 'translations': refs,
                     'comparison_context': context, 'comparison_checks': comparison_checks(result.row_id, source_row)})
+        normalization_ambiguous = False
+        if not hits and supplementary:
+            for left_label, text, left_entry in names.variants('master', result.row_id):
+                supported = set()
+                for method, equivalent in name_keys(text):
+                    indices = variant_engine.equivalents.get(equivalent, ()) if variant_engine else ()
+                    if indices:
+                        supported.update(indices)
+                if supported and variant_engine.close_competitor(text, supported, variant_engine.candidates(text, sorted(supported))):
+                    normalization_ambiguous = True
+                for variant_id in sorted(supported):
+                    i, right_label, right_text, right_entry = variant_refs[variant_id]
+                    if not (left_entry or right_entry) and names.fields['master'] == mapping.master_id and names.fields['source'] == mapping.source_id:
+                        continue
+                    hits.add(i)
+                    duplicate_master |= any(len(master_variant_keys[k]) > 1 for _, k in name_keys(text))
+                    provenance.append({'direction': f'{left_label} → {right_label}',
+                        'master_field': names.fields['master'], 'source_field': names.fields['source'],
+                        'source_row': i, 'translations': [dict(e) for e in (left_entry, right_entry) if e],
+                        'normalization': equivalence_method(text, right_text), 'comparison_context': [],
+                        'comparison_checks': comparison_checks(result.row_id, i)})
+        if not hits and result.match_status in ('Name equivalent', 'Company suffix'):
+            if result.candidates:
+                result.translation_provenance = [{'direction': 'Original Master → Original Source',
+                    'master_field': mapping.master_id, 'source_field': mapping.source_id,
+                    'source_row': result.candidates[0]['source_row'], 'translations': [],
+                    'normalization': result.match_method}]
+            continue
+        if hits and result.match_status in ('Name equivalent', 'Company suffix'):
+            # Contradictory approved-name evidence must never silently replace the original match.
+            hits.add(result.candidates[0]['source_row'])
         if not hits:
             if not supplementary:
                 continue
@@ -116,7 +153,8 @@ def reconcile(master, source, mapping, records=(), *, aliases=None, relationship
                              'translations': [dict(e) for e in (entry, right_entry) if e],
                              'comparison_context': [], 'comparison_checks': comparison_checks(result.row_id, i)})
             best = sorted(ranked.values(), key=lambda item: item[0], reverse=True)[:3]
-            if best:
+            if best and (result.match_method != 'Transliteration candidates' or
+                         best[0][1]['similarity'] > result.candidates[0]['similarity']):
                 result.candidates = [b[1] for b in best]
                 result.translation_provenance = [b[2] for b in best]
                 result.match_method = 'Fuzzy — Approved Translation' if best[0][2]['translations'] else 'Fuzzy'
@@ -138,7 +176,7 @@ def reconcile(master, source, mapping, records=(), *, aliases=None, relationship
             return (a == b, not p['translations'])
         provenance.sort(key=strength, reverse=True)
         strongest = provenance[0]
-        result.match_method = ('Exact' if strength(strongest)[0] else 'Normalized') + (' — Approved Translation' if strongest['translations'] else '')
+        result.match_method = (strongest.get('normalization') or ('Exact' if strength(strongest)[0] else 'Normalized')) + (' — Approved Translation' if strongest['translations'] else '')
         result.match_basis = basis(strongest['direction'])
         result.match_score = 100.0
         result.identity_confidence = 'Translation-assisted — verification required'
@@ -152,11 +190,16 @@ def reconcile(master, source, mapping, records=(), *, aliases=None, relationship
         value = str(engine.rows[min(hits)][mapping.source_value] or '')
         if len(values) > 1:
             result.match_status, result.notes = 'Duplicate conflict', CONFLICT_NOTE
+        elif normalization_ambiguous:
+            result.match_status = 'Ambiguous candidates'
+            result.notes = 'Competing approved-name variants are too similar; individual investigation required.'
         else:
             result.proposed = value if valid(value) else ''
             if len(collision) > 1 or duplicate_master:
                 result.match_status, result.notes = 'Duplicate identifier', CONFLICT_NOTE
         # No translation path sets final, verified_original, or reliable identity confidence.
+    for result in results:
+        assess_local(result)
     names.attach(results)
     return results, engine.conflicts
 

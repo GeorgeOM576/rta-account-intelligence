@@ -542,6 +542,9 @@ elif page == 'Review & Approvals':
                 b.metric('Intelligence Proposed Value', r.proposed if has_proposal(r) else '—', border=True)
                 c.metric('Final value', final_value(r) or '—', border=True)
                 confidence_indicator(r.ai_confidence)
+                if r.local_confidence:
+                    st.caption(f'Local match confidence: {r.local_confidence} · Method: {r.match_method or r.match_status}')
+                    st.write(r.local_reason)
             st.write(f'**Identity:** {r.identity_confidence}')
             display = review_display[r.row_id].account_context
             master_name = display.get('master', {})

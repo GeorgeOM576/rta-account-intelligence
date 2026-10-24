@@ -105,7 +105,7 @@ def result_row(r):
                 'Recommendation Reasoning': r.recommendation_reasoning, 'Research Timestamp': r.researched_at,
                 'Verified Facts': json.dumps(r.verified_facts, ensure_ascii=False),
                 'Suggested Matches': json.dumps(r.suggested_matches, ensure_ascii=False),
-                'Proposed Segment': r.ai_proposed, 'Recommendation Decision': r.recommendation_status,
+                'Proposed Segment': r.proposed, 'Recommendation Decision': r.recommendation_status,
                 'Organization Mapping Policy': r.mapping_policy})
     row.update({'Selected Source Record ID': r.selected_source.get('source_row'),
                 'Selected Source Account': r.selected_source.get('account', ''),
@@ -128,6 +128,7 @@ def result_row(r):
         'Source Approved English Translation': source.get('approved_english', ''),
         'Match Method': r.match_method or r.match_status,
         'Match Basis': r.match_basis, 'Match Score': r.match_score,
+        'Local Match Confidence': r.local_confidence, 'Local Recommendation Reason': r.local_reason,
         'Research Recommendation': r.recommendation_reasoning,
         'Research Evidence / Sources': '\n'.join(r.evidence)})
     return row

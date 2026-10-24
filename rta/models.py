@@ -78,6 +78,9 @@ class Result:
     account_context: dict = field(default_factory=dict)
     match_method: str = ''
     match_basis: str = ''
+    local_proposed: str = ''
+    local_confidence: str = ''
+    local_reason: str = ''
     match_score: float | None = None
 
     def __post_init__(self):

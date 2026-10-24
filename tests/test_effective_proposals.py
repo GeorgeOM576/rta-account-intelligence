@@ -16,10 +16,10 @@ def test_actual_local_pipeline_uses_effective_proposal(workspace):
     store, project, _ = workspace
     before = store.load(project)
     results = [Result(**r) for r in before['results']]
-    assert [r.row_id for r in results if r.status_label == INTELLIGENCE_PENDING] == [0, 1, 4, 8]
+    assert [r.row_id for r in results if r.status_label == INTELLIGENCE_PENDING] == [0, 1, 4, 8, 9]
     assert all(not r.ai_proposed for r in results)
     counts = summary(results)
-    assert counts[INTELLIGENCE_PENDING] == 4 and counts[MANUAL_REQUIRED] == 6
+    assert counts[INTELLIGENCE_PENDING] == 5 and counts[MANUAL_REQUIRED] == 5
     assert counts['Pending Approvals'] == counts[INTELLIGENCE_PENDING] + counts[MANUAL_REQUIRED] == 10
     for r in results:
         assert r.status_label == review_status_label(r) == result_row(r)['Review Status']
@@ -27,7 +27,7 @@ def test_actual_local_pipeline_uses_effective_proposal(workspace):
     sheet = book['Reconciliation Results']
     headers = [c.value for c in sheet[1]]
     rows = [dict(zip(headers, row)) for row in sheet.iter_rows(min_row=2, values_only=True)]
-    for index in [0, 1, 4, 8]:
+    for index in [0, 1, 4, 8, 9]:
         assert rows[index]['Review Status'] == INTELLIGENCE_PENDING
         assert rows[index]['Intelligence Proposed Value'] == before['results'][index]['proposed']
         assert rows[index]['AI Proposed Value'] is None
@@ -83,14 +83,16 @@ def test_local_filtered_selection_and_status_bubble(workspace, monkeypatch):
     app = app_for(workspace, monkeypatch)
     navigate(app, 'Review & Approvals')
     by_label(app.selectbox, 'Review status').set_value(INTELLIGENCE_PENDING).run()
-    assert list(app.dataframe[-1].value['Record ID']) == [0, 1, 4, 8]
+    assert list(app.dataframe[-1].value['Record ID']) == [0, 1, 4, 8, 9]
     assert any('redthread-status' in m.value and INTELLIGENCE_PENDING in m.value for m in app.markdown)
     by_label(app.checkbox, 'Select All filtered accounts').check().run()
-    assert any('Selected accounts: 4 of 4' in c.value for c in app.caption)
+    assert any('Selected accounts: 5 of 5' in c.value for c in app.caption)
     by_label(app.text_input, 'Bulk reviewer name').set_value('Local reviewer')
     by_label(app.checkbox, 'I have verified the evidence and field value for every selected account.').check()
     by_label(app.button, 'Save Review Decisions').click().run()
     assert not app.exception
+    # The fifth proposal is a Medium-confidence Studio/Studios equivalence.
+    # Bulk approval still skips it; explicit individual verification is required.
     assert [e['row_id'] for e in store.audit(project)] == [0, 1, 4, 8]
     persisted = store.load(project)
     for i, r in enumerate(persisted['results']):
