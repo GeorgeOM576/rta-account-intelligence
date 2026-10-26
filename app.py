@@ -200,6 +200,9 @@ def research_sections(record, show_candidates=True, show_tables=True):
     st.markdown('**Recommendation Decision**')
     st.write(record.recommendation_status if record.recommendation_status != 'Insufficient Evidence' else INSUFFICIENT)
     st.write(record.recommendation_reasoning or 'No research recommendation is available yet.')
+    if record.secondary_validation:
+        st.caption('Secondary validation: ' + record.secondary_validation['status'])
+        st.write(record.secondary_validation['reason'])
     st.caption(f"Organization mapping policy: {record.mapping_policy or POLICIES[0]} · Reviewer status: {record.status_label}")
 
 
@@ -314,9 +317,9 @@ elif page == 'Run Reconciliation':
                     with st.spinner('Indexing identifiers and scoring blocked candidates…'):
                         entries = TranslationEngine(store, st.session_state.project).records()
                         fresh, conflicts = reconcile(master, source, mapping, entries,
-                            aliases=payload.get('aliases'), relationships=payload.get('relationships'))
+                            aliases=payload.get('aliases'), relationships=payload.get('relationships'), previous=results)
                         # Preserve human decisions and research evidence without freezing unresolved candidates.
-                        next_results = retain_reviewed(fresh, results)
+                        next_results = fresh
                         run_names = ApprovedNames(payload, mapping, entries)
                         run_names.attach(next_results)
                         next_payload = dict(payload,
@@ -545,6 +548,9 @@ elif page == 'Review & Approvals':
                 if r.local_confidence:
                     st.caption(f'Local match confidence: {r.local_confidence} · Method: {r.match_method or r.match_status}')
                     st.write(r.local_reason)
+                if r.secondary_validation:
+                    st.caption('Secondary validation: ' + r.secondary_validation['status'])
+                    st.write(r.secondary_validation['reason'])
             st.write(f'**Identity:** {r.identity_confidence}')
             display = review_display[r.row_id].account_context
             master_name = display.get('master', {})

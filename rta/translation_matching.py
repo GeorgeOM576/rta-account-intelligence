@@ -9,7 +9,7 @@ from .approved_names import ApprovedNames
 import polars as pl
 
 
-def reconcile(master, source, mapping, records=(), *, aliases=None, relationships=None):
+def reconcile(master, source, mapping, records=(), *, aliases=None, relationships=None, previous=()):
     engine = Matcher(source, mapping, aliases, relationships)
     results = engine.run(master)
     master_rows, source_rows = master.to_dicts(), source.to_dicts()
@@ -200,6 +200,13 @@ def reconcile(master, source, mapping, records=(), *, aliases=None, relationship
         # No translation path sets final, verified_original, or reliable identity confidence.
     for result in results:
         assess_local(result)
+    if previous:
+        results = retain_reviewed(results, previous)
+    names.attach(results)
+    from .secondary_validation import SecondaryValidator
+    validator = SecondaryValidator(master_rows, source_rows, mapping, names, aliases)
+    for result in results:
+        validator.evaluate(result)
     names.attach(results)
     return results, engine.conflicts
 

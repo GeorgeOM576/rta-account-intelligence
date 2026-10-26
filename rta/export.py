@@ -128,6 +128,10 @@ def result_row(r):
         'Source Approved English Translation': source.get('approved_english', ''),
         'Match Method': r.match_method or r.match_status,
         'Match Basis': r.match_basis, 'Match Score': r.match_score,
+        'Secondary Validation Status': r.secondary_validation.get('status', ''),
+        'Secondary Validation Confidence': r.secondary_validation.get('confidence', ''),
+        'Secondary Validation Reason': r.secondary_validation.get('reason', ''),
+        'Secondary Validation Evidence': json.dumps(r.secondary_validation.get('evidence', []), ensure_ascii=False),
         'Local Match Confidence': r.local_confidence, 'Local Recommendation Reason': r.local_reason,
         'Research Recommendation': r.recommendation_reasoning,
         'Research Evidence / Sources': '\n'.join(r.evidence)})

@@ -88,13 +88,13 @@ class Matcher:
 
     def candidates(self, name, priority):
         counts = Counter()
-        for block in self.block_keys(name):
+        for block in sorted(self.block_keys(name)):
             posting = self.blocks.get(block, ())
             # Very common tokens/grams provide no useful blocking signal.
             # Skip them so generic names cannot turn this into Cartesian scoring.
             if len(posting) <= 2500:
                 counts.update(posting)
-        keys = [k for k, _ in counts.most_common(1200)]
+        keys = sorted(counts, key=lambda k: (-counts[k], self.normal[k][0]))[:1200]
         for i in priority:
             key = normalize(self.rows[i][self.mapping.source_id])
             if key not in keys:
@@ -102,7 +102,8 @@ class Matcher:
         # Small deterministic fallback pool still avoids a full source comparison.
         if len(keys) < 3:
             keys = list(dict.fromkeys(keys + list(self.normal)[:100]))
-        ranked = process.extract(normalize(name), keys, scorer=fuzz.WRatio, limit=6)
+        ranked = sorted(process.extract(normalize(name), keys, scorer=fuzz.WRatio, limit=6),
+                        key=lambda hit: (-hit[1], -fuzz.ratio(normalize(name), hit[0]), self.normal[hit[0]][0]))
         indices = list(dict.fromkeys(priority + [i for key, _, _ in ranked for i in self.normal[key]]))
         return [{'source_row': i, 'account': str(self.rows[i][self.mapping.source_id]),
                  'value': str(self.rows[i][self.mapping.source_value] or ''),

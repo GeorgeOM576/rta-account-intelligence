@@ -78,6 +78,7 @@ class Result:
     account_context: dict = field(default_factory=dict)
     match_method: str = ''
     match_basis: str = ''
+    secondary_validation: dict = field(default_factory=dict)
     local_proposed: str = ''
     local_confidence: str = ''
     local_reason: str = ''

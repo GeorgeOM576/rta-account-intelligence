@@ -162,7 +162,8 @@ class Researcher:
             result.evidence = [e['url'] for e in snapshot.get('retrieved_evidence', [])]
             result.review_status = 'Pending'
             result.notes = 'Research failed. Retry explicitly or investigate manually.'
-        return result
+        from .secondary_validation import reevaluate_attached
+        return reevaluate_attached(result, source, mapping)
 
     @staticmethod
     def archive(result):
@@ -222,4 +223,5 @@ class Researcher:
         result.notes = AI_PENDING if result.ai_proposed else INSUFFICIENT
         if result.relationship in ('Subsidiary', 'Acquired'):
             result.notes = RELATION_NOTE
-        return result
+        from .secondary_validation import reevaluate_attached
+        return reevaluate_attached(result, source, mapping)
